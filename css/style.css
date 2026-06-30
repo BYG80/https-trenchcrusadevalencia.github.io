@@ -240,3 +240,20 @@ footer{
     background:#090909;
 
 }
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+}
