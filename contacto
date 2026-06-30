@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Trench Crusade Valencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>CONTACTO</h1>
+        <p class="subtitle">ÚNETE A LA CRUZADA</p>
+        <p>Estamos aquí para responder tus dudas y darte la bienvenida a nuestra comunidad.</p>
+    </header>
+
+    <main class="contact-container">
+        <!-- Sección Información -->
+        <section class="info-section">
+            <h2>INFORMACIÓN DE CONTACTO</h2>
+            <div class="info-item">
+                <i class="icon-location"></i>
+                <div>
+                    <h3>DIRECCIÓN DEL CLUB</h3>
+                    <p>C/ De los Forjadores, 12<br>Pol. Ind. Vara de Quart<br>46014 Valencia, España</p>
+                </div>
+            </div>
+            <!-- Repetir estructura para otros iconos (Email, Discord, WhatsApp, Horario) -->
+        </section>
+
+        <!-- Sección Formulario -->
+        <section class="form-section">
+            <h2>ENVÍANOS UN MENSAJE</h2>
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="email" placeholder="Tu email">
+                </div>
+                <input type="text" placeholder="Asunto">
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">ENVIAR MENSAJE</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
