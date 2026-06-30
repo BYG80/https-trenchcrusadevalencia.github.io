@@ -1,0 +1,48 @@
+body {
+    background-color: #0a0a0a;
+    color: #d1c7ac;
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fondo-trench.jpg');
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo de los inputs */
+input, textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #4a4436;
+    color: #d1c7ac;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Botón estilizado */
+button {
+    background: #6d1515;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    color: #c5a059;
+    border-bottom: 1px solid #4a4436;
+    padding-bottom: 10px;
+}
