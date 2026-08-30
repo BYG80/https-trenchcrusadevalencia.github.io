@@ -1,15 +1,22 @@
+```css
+/* =========================================================
+   CONTACTO - SONS OF HEROES
+   ========================================================= */
 
-/* =====================================================
-   CONTACTO
-   ===================================================== */
 
-/* Cabecera específica de la página de contacto */
+/* =========================================================
+   CABECERA DE CONTACTO
+   ========================================================= */
 
 .contact-hero {
+
     min-height: 420px;
 
     background:
-        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.78)),
+        linear-gradient(
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.78)
+        ),
         url("../assets/img/hero.jpg");
 
     background-size: cover;
@@ -17,38 +24,73 @@
 
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
     text-align: center;
 
-    padding: 150px 20px 80px;
+    padding: 160px 20px 80px;
+
 }
+
+
+/* Título CONTACTO */
 
 .contact-hero h2 {
+
     font-family: Cinzel, serif;
+
     font-size: 60px;
+
     color: #d9b96d;
-    margin-bottom: 20px;
+
+    margin: 0 0 20px 0;
+
+    line-height: 1.2;
+
 }
+
+
+/* SUBTÍTULO */
 
 .contact-hero .subtitle {
+
     font-family: Cinzel, serif;
+
     font-size: 25px;
+
     color: #ffffff;
-    margin-bottom: 15px;
+
+    margin: 0 0 20px 0;
+
+    line-height: 1.4;
+
 }
 
-.contact-hero p {
+
+/* Texto */
+
+.contact-hero > p:last-child {
+
     max-width: 700px;
+
+    font-family: Inter, sans-serif;
+
     font-size: 18px;
+
+    color: #ffffff;
+
     line-height: 1.7;
+
+    margin: 0;
+
 }
 
 
-/* =====================================================
-   CONTENEDOR CONTACTO
-   ===================================================== */
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
 
 .contact-container {
 
@@ -58,17 +100,20 @@
 
     gap: 60px;
 
+    width: 100%;
+
     max-width: 1200px;
 
-    margin: auto;
+    margin: 0 auto;
 
     padding: 100px 40px;
+
 }
 
 
-/* =====================================================
-   INFORMACIÓN
-   ===================================================== */
+/* =========================================================
+   INFORMACIÓN DE CONTACTO
+   ========================================================= */
 
 .info-section h2,
 .form-section h2 {
@@ -79,10 +124,14 @@
 
     font-size: 35px;
 
-    margin-bottom: 40px;
+    line-height: 1.3;
+
+    margin: 0 0 40px 0;
 
 }
 
+
+/* Elemento de información */
 
 .info-item {
 
@@ -97,29 +146,41 @@
 }
 
 
+/* Título */
+
 .info-item h3 {
 
     font-family: Cinzel, serif;
 
     color: #d9b96d;
 
-    margin-bottom: 10px;
+    font-size: 20px;
+
+    margin: 0 0 10px 0;
 
 }
 
+
+/* Texto */
 
 .info-item p {
 
+    font-family: Inter, sans-serif;
+
     color: #d1c7ac;
 
+    font-size: 16px;
+
     line-height: 1.7;
+
+    margin: 0;
 
 }
 
 
-/* =====================================================
+/* =========================================================
    ICONOS
-   ===================================================== */
+   ========================================================= */
 
 .icon-location,
 .icon-email {
@@ -130,6 +191,8 @@
 
     height: 45px;
 
+    min-width: 45px;
+
     border: 1px solid #6d1515;
 
     border-radius: 50%;
@@ -139,9 +202,9 @@
 }
 
 
-/* =====================================================
+/* =========================================================
    FORMULARIO
-   ===================================================== */
+   ========================================================= */
 
 .form-section form {
 
@@ -149,8 +212,12 @@
 
     flex-direction: column;
 
+    width: 100%;
+
 }
 
+
+/* Dos campos en una fila */
 
 .form-section .row {
 
@@ -163,22 +230,26 @@
 }
 
 
-/* Campos */
+/* =========================================================
+   CAMPOS
+   ========================================================= */
 
 .form-section input,
 .form-section textarea {
 
     width: 100%;
 
-    background: #111;
+    background: #111111;
 
     border: 1px solid #4a4436;
+
+    border-radius: 4px;
 
     color: #ffffff;
 
     padding: 15px;
 
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 
     font-family: Inter, sans-serif;
 
@@ -186,8 +257,12 @@
 
     outline: none;
 
+    transition: border-color 0.3s ease;
+
 }
 
+
+/* Cuando hacemos clic */
 
 .form-section input:focus,
 .form-section textarea:focus {
@@ -196,6 +271,18 @@
 
 }
 
+
+/* Placeholder */
+
+.form-section input::placeholder,
+.form-section textarea::placeholder {
+
+    color: #777777;
+
+}
+
+
+/* Área de mensaje */
 
 .form-section textarea {
 
@@ -206,19 +293,9 @@
 }
 
 
-/* Placeholder */
-
-.form-section input::placeholder,
-.form-section textarea::placeholder {
-
-    color: #777;
-
-}
-
-
-/* =====================================================
+/* =========================================================
    BOTÓN
-   ===================================================== */
+   ========================================================= */
 
 .form-section button {
 
@@ -226,26 +303,32 @@
 
     background: #7c1111;
 
-    color: white;
+    color: #ffffff;
 
     border: none;
 
-    padding: 16px 30px;
-
     border-radius: 6px;
+
+    padding: 16px 30px;
 
     cursor: pointer;
 
     text-transform: uppercase;
 
-    font-weight: bold;
-
     font-family: Inter, sans-serif;
 
-    transition: .3s;
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 
 }
 
+
+/* Hover */
 
 .form-section button:hover {
 
@@ -256,11 +339,29 @@
 }
 
 
-/* =====================================================
-   MÓVIL
-   ===================================================== */
+/* =========================================================
+   PIE DE PÁGINA
+   ========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: #090909;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET / MÓVIL
+   ========================================================= */
 
 @media (max-width: 768px) {
+
+
+    /* Cabecera */
 
     .contact-hero {
 
@@ -285,6 +386,15 @@
     }
 
 
+    .contact-hero > p:last-child {
+
+        font-size: 16px;
+
+    }
+
+
+    /* Contenido */
+
     .contact-container {
 
         grid-template-columns: 1fr;
@@ -296,6 +406,8 @@
     }
 
 
+    /* Formulario */
+
     .form-section .row {
 
         grid-template-columns: 1fr;
@@ -304,6 +416,68 @@
 
     }
 
+
+    /* Títulos */
+
+    .info-section h2,
+    .form-section h2 {
+
+        font-size: 28px;
+
+    }
+
 }
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+
+    .contact-hero {
+
+        padding: 140px 15px 50px;
+
+    }
+
+
+    .contact-hero h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .contact-hero .subtitle {
+
+        font-size: 18px;
+
+    }
+
+
+    .contact-container {
+
+        padding: 50px 15px;
+
+    }
+
+
+    .info-item {
+
+        gap: 15px;
+
+    }
+
+
+    .form-section button {
+
+        width: 100%;
+
+    }
+
+}
+```
 
 
