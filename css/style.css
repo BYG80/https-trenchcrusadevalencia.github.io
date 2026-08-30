@@ -379,3 +379,24 @@ footer {
 }
 
 
+/* =========================================================
+   CENTRAR TÍTULOS ESPECIALES DE "EL JUEGO"
+   ========================================================= */
+
+.game-hero,
+.game-image {
+    text-align: center;
+}
+
+.game-hero-content,
+.game-image-content {
+    text-align: center;
+    width: 100%;
+}
+
+.game-hero h2,
+.game-image h2 {
+    text-align: center;
+}
+
+
