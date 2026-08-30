@@ -1,0 +1,367 @@
+```css
+/* =========================================================
+   RECURSOS
+   ========================================================= */
+
+.resources-page {
+    padding-top: 90px;
+}
+
+
+/* =========================================================
+   HERO RECURSOS
+   ========================================================= */
+
+.resources-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.80),
+            rgba(0,0,0,.80)
+        ),
+        url("../assets/img/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.resources-hero-content {
+    max-width: 850px;
+}
+
+
+.resources-hero h2 {
+
+    font-family: Cinzel, serif;
+
+    font-size: 65px;
+
+    color: #d9b96d;
+
+    margin-bottom: 25px;
+}
+
+
+.resources-hero p {
+
+    font-size: 21px;
+
+    line-height: 1.7;
+
+    color: #d1c7ac;
+}
+
+
+/* =========================================================
+   SECCIONES
+   ========================================================= */
+
+.resources-section {
+
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+
+.resources-section h2 {
+
+    text-align: center;
+
+    font-family: Cinzel, serif;
+
+    font-size: 45px;
+
+    color: #d9b96d;
+
+    margin-bottom: 20px;
+}
+
+
+.resources-intro {
+
+    max-width: 750px;
+
+    margin: 0 auto 50px auto;
+
+    color: #bdb7a5;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECCIÓN OSCURA
+   ========================================================= */
+
+.dark-section {
+
+    background: #090909;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.resources-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.resource-card {
+
+    background: #181818;
+
+    border: 1px solid #2c2c2c;
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+
+.resource-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #7c1111;
+}
+
+
+/* =========================================================
+   TARJETAS DESTACADAS
+   ========================================================= */
+
+.resource-card.featured {
+
+    border-top: 3px solid #7c1111;
+}
+
+
+/* =========================================================
+   NÚMERO
+   ========================================================= */
+
+.resource-number {
+
+    font-family: Cinzel, serif;
+
+    font-size: 18px;
+
+    color: #7c1111;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+.resource-card h3 {
+
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.resource-card p {
+
+    color: #c4c0b5;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.resource-button {
+
+    display: inline-block;
+
+    background: #7c1111;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+
+.resource-button:hover {
+
+    background: #b32020;
+}
+
+
+/* =========================================================
+   ENLACES
+   ========================================================= */
+
+.resource-link {
+
+    color: #d9b96d;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+
+.resource-link:hover {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FINAL
+   ========================================================= */
+
+.resources-final {
+
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.80),
+            rgba(0,0,0,.80)
+        ),
+        url("../assets/img/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.resources-final h2 {
+
+    font-family: Cinzel, serif;
+
+    font-size: 45px;
+
+    color: #d9b96d;
+
+    margin-bottom: 20px;
+}
+
+
+.resources-final p {
+
+    color: #d1c7ac;
+
+    font-size: 19px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .resources-page {
+        padding-top: 140px;
+    }
+
+
+    .resources-hero {
+        min-height: 350px;
+    }
+
+
+    .resources-hero h2 {
+        font-size: 45px;
+    }
+
+
+    .resources-hero p {
+        font-size: 18px;
+    }
+
+
+    .resources-section {
+        padding: 70px 20px;
+    }
+
+
+    .resources-section h2 {
+        font-size: 35px;
+    }
+
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .resources-final h2 {
+        font-size: 35px;
+    }
+
+}
+```
