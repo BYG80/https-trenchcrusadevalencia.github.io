@@ -246,82 +246,51 @@ footer {
     background: #090909;
 }
 
-
 /* =========================================================
-   GALERÍA
+   GALERÍA DE PARTIDAS
    ========================================================= */
 
 .gallery {
-
     background: #0d0d0d;
-
     text-align: center;
-
     padding: 80px 20px;
 }
 
-
-/* TÍTULO */
-
 .gallery h2 {
-
     font-family: Cinzel, serif;
-
     color: #d9b96d;
-
     font-size: 45px;
-
     margin-bottom: 15px;
 }
 
-
-/* TEXTO INTRODUCTORIO */
-
 .gallery-intro {
-
     max-width: 700px;
-
     margin: 0 auto 40px auto;
-
     color: #bdb7a5;
-
     font-size: 18px;
-
     line-height: 1.7;
 }
 
 
-/* =========================================================
-   CUADRÍCULA DE FOTOS
-   ========================================================= */
+/* CONTENEDOR DE TODA LA GALERÍA */
 
 .gallery-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 280px);
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 
-    width: 100%;
-
-    max-width: 880px;
-
+    max-width: 1000px;
     margin: 0 auto;
-
-    justify-content: center;
 }
 
 
-/* =========================================================
-   CONTENEDOR DE FOTO
-   ========================================================= */
+/* CADA FOTO */
 
 .gallery-item {
+    flex: 0 0 280px;
 
     width: 280px;
-
     height: 175px;
 
     overflow: hidden;
@@ -331,55 +300,29 @@ footer {
     background: #181818;
 
     border: 1px solid #2c2c2c;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, .4);
 }
 
 
-/* =========================================================
-   IMAGEN
-   ========================================================= */
+/* IMAGEN */
 
 .gallery-item img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
     display: block;
 
-    transition:
-        transform .4s ease;
+    width: 280px !important;
+    height: 175px !important;
+
+    max-width: 280px !important;
+    max-height: 175px !important;
+
+    object-fit: cover;
 }
 
 
-/* =========================================================
-   EFECTO HOVER
-   ========================================================= */
+/* EFECTO */
 
 .gallery-item:hover img {
-
     transform: scale(1.05);
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 950px) {
-
-    .gallery-grid {
-
-        grid-template-columns:
-            repeat(2, 280px);
-
-        max-width: 580px;
-    }
-
+    transition: transform .4s ease;
 }
 
 
@@ -390,70 +333,23 @@ footer {
 @media (max-width: 650px) {
 
     .gallery {
-
-        padding: 60px 20px;
+        padding: 60px 15px;
     }
 
-
     .gallery h2 {
-
         font-size: 35px;
     }
 
-
-    .gallery-intro {
-
-        font-size: 16px;
-    }
-
-
-    .gallery-grid {
-
-        grid-template-columns: 1fr;
-
-        max-width: 280px;
-    }
-
-
     .gallery-item {
+        flex: 0 0 280px;
 
         width: 280px;
-
         height: 175px;
     }
 
-}
-
-
-/* =========================================================
-   HEADER EN MÓVIL
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    header {
-
-        padding: 20px;
-
-        flex-direction: column;
-    }
-
-
-    nav ul {
-
-        gap: 15px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        margin-top: 15px;
-    }
-
-
-    .hero h2 {
-
-        font-size: 40px;
+    .gallery-item img {
+        width: 280px !important;
+        height: 175px !important;
     }
 
 }
