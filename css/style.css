@@ -1,4 +1,3 @@
-
 /* =========================================================
    RESET
    ========================================================= */
@@ -21,23 +20,20 @@ body {
 
 
 /* =========================================================
-   HEADER
+   HEADER / MENÚ
    ========================================================= */
 
 header {
     position: fixed;
-
     top: 0;
     left: 0;
 
     width: 100%;
 
-    background: rgba(10, 10, 10, .92);
-
+    background: rgba(10, 10, 10, 0.92);
     backdrop-filter: blur(10px);
 
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 
@@ -53,9 +49,7 @@ header {
 
 .logo {
     display: flex;
-
     align-items: center;
-
     gap: 15px;
 }
 
@@ -65,31 +59,25 @@ header {
 
 .logo h1 {
     font-family: Cinzel, serif;
-
     font-size: 30px;
-
     color: #d9b96d;
 }
 
 
 /* =========================================================
-   MENÚ
+   NAVEGACIÓN
    ========================================================= */
 
 nav ul {
     display: flex;
-
     list-style: none;
-
     gap: 35px;
 }
 
 nav a {
     color: white;
-
     text-decoration: none;
-
-    transition: .3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -98,28 +86,24 @@ nav a:hover {
 
 
 /* =========================================================
-   HERO
+   HERO PRINCIPAL
    ========================================================= */
 
 .hero {
-
     height: 100vh;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, .75),
-            rgba(0, 0, 0, .75)
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
         ),
         url("../assets/img/hero.jpg");
 
     background-size: cover;
-
     background-position: center;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -132,20 +116,15 @@ nav a:hover {
 }
 
 .hero h2 {
-
     font-family: Cinzel, serif;
-
     font-size: 70px;
-
     color: #d9b96d;
 
     margin-bottom: 25px;
 }
 
 .hero p {
-
     font-size: 22px;
-
     line-height: 1.8;
 
     margin-bottom: 40px;
@@ -157,7 +136,6 @@ nav a:hover {
    ========================================================= */
 
 .btn {
-
     display: inline-block;
 
     background: #7c1111;
@@ -172,11 +150,10 @@ nav a:hover {
 
     margin: 10px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .btn:hover {
-
     background: #b32020;
 }
 
@@ -186,12 +163,10 @@ nav a:hover {
    ========================================================= */
 
 section {
-
     padding: 100px 10%;
 }
 
 section h2 {
-
     font-family: Cinzel, serif;
 
     color: #d9b96d;
@@ -203,11 +178,10 @@ section h2 {
 
 
 /* =========================================================
-   TARJETAS
+   TARJETAS PRINCIPALES
    ========================================================= */
 
 .cards {
-
     display: grid;
 
     grid-template-columns:
@@ -217,34 +191,57 @@ section h2 {
 }
 
 .cards article {
-
     background: #181818;
 
     padding: 30px;
 
     border-radius: 10px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .cards article:hover {
-
     transform: translateY(-8px);
 }
 
 
 /* =========================================================
-   FOOTER
+   ÚLTIMAS NOTICIAS
    ========================================================= */
 
-footer {
-
+.news {
     text-align: center;
-
-    padding: 40px;
-
-    background: #090909;
 }
+
+.news h2 {
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+
+    text-align: left;
+}
+
+.news-grid article {
+    background: #181818;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.news-grid article:hover {
+    transform: translateY(-8px);
+}
+
 
 /* =========================================================
    GALERÍA DE PARTIDAS
@@ -252,40 +249,57 @@ footer {
 
 .gallery {
     background: #0d0d0d;
+
     text-align: center;
+
     padding: 80px 20px;
 }
 
 .gallery h2 {
     font-family: Cinzel, serif;
+
     color: #d9b96d;
+
     font-size: 45px;
+
     margin-bottom: 15px;
 }
 
 .gallery-intro {
     max-width: 700px;
+
     margin: 0 auto 40px auto;
+
     color: #bdb7a5;
+
     font-size: 18px;
+
     line-height: 1.7;
 }
 
 
-/* CONTENEDOR DE TODA LA GALERÍA */
+/* =========================================================
+   CUADRÍCULA DE LA GALERÍA
+   ========================================================= */
 
 .gallery-grid {
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     gap: 20px;
 
     max-width: 1000px;
+
     margin: 0 auto;
 }
 
 
-/* CADA FOTO */
+/* =========================================================
+   CONTENEDOR DE CADA FOTO
+   ========================================================= */
 
 .gallery-item {
     flex: 0 0 280px;
@@ -303,7 +317,9 @@ footer {
 }
 
 
-/* IMAGEN */
+/* =========================================================
+   IMÁGENES DE LA GALERÍA
+   ========================================================= */
 
 .gallery-item img {
     display: block;
@@ -315,14 +331,118 @@ footer {
     max-height: 175px !important;
 
     object-fit: cover;
+
+    transition: transform 0.4s ease;
 }
 
 
-/* EFECTO */
+/* =========================================================
+   EFECTO AL PASAR EL RATÓN
+   ========================================================= */
 
 .gallery-item:hover img {
     transform: scale(1.05);
-    transition: transform .4s ease;
+}
+
+
+/* =========================================================
+   PÁGINA "EL JUEGO"
+   ========================================================= */
+
+.game-container {
+    text-align: center;
+}
+
+.game-container h2 {
+    text-align: center;
+}
+
+.game-container p {
+    text-align: center;
+}
+
+
+/* =========================================================
+   TARJETAS DE "EL JUEGO"
+   ========================================================= */
+
+.game-cards article,
+.factions article {
+    text-align: left;
+}
+
+
+/* =========================================================
+   HERO DE "EL JUEGO"
+   ========================================================= */
+
+.game-hero {
+    text-align: center;
+}
+
+.game-hero-content {
+    width: 100%;
+    text-align: center;
+}
+
+.game-hero h2 {
+    text-align: center;
+}
+
+
+/* =========================================================
+   SECCIÓN / IMAGEN DE "EL CAMPO DE BATALLA"
+   ========================================================= */
+
+.game-image {
+    text-align: center;
+}
+
+.game-image-content {
+    width: 100%;
+    text-align: center;
+}
+
+.game-image h2 {
+    text-align: center;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 40px;
+
+    background: #090909;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 30px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+    .gallery-grid {
+        gap: 15px;
+    }
+
 }
 
 
@@ -330,7 +450,43 @@ footer {
    MÓVIL
    ========================================================= */
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        margin-top: 15px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    section h2 {
+        font-size: 35px;
+    }
 
     .gallery {
         padding: 60px 15px;
@@ -338,6 +494,19 @@ footer {
 
     .gallery h2 {
         font-size: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   GALERÍA EN MÓVIL
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .gallery-grid {
+        gap: 15px;
     }
 
     .gallery-item {
@@ -354,66 +523,5 @@ footer {
 
 }
 
-/* =========================================================
-   CENTRAR TÍTULOS DE LA PÁGINA EL JUEGO
-   ========================================================= */
-
-.game-container {
-    text-align: center;
-}
-
-.game-container h2 {
-    text-align: center;
-}
-
-.game-container p {
-    text-align: center;
-}
-
-
-/* Los textos de las tarjetas siguen alineados a la izquierda */
-
-.game-cards article,
-.factions article {
-    text-align: left;
-}
-
-
-/* =========================================================
-   CENTRAR TÍTULOS ESPECIALES DE "EL JUEGO"
-   ========================================================= */
-
-.game-hero,
-.game-image {
-    text-align: center;
-}
-
-.game-hero-content,
-.game-image-content {
-    text-align: center;
-    width: 100%;
-}
-
-.game-hero h2,
-.game-image h2 {
-    text-align: center;
-}
-
-
-/* =========================================================
-   TÍTULO ÚLTIMAS NOTICIAS
-   ========================================================= */
-
-.news {
-    text-align: center;
-}
-
-.news h2 {
-    text-align: center;
-}
-
-.news-grid {
-    text-align: left;
-}
 
 
