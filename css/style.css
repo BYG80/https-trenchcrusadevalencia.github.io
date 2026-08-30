@@ -400,3 +400,20 @@ footer {
 }
 
 
+/* =========================================================
+   TÍTULO ÚLTIMAS NOTICIAS
+   ========================================================= */
+
+.news {
+    text-align: center;
+}
+
+.news h2 {
+    text-align: center;
+}
+
+.news-grid {
+    text-align: left;
+}
+
+
