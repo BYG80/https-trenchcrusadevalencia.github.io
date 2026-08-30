@@ -1,115 +1,258 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contacto | Sons of Heroes</title>
+    <title>Contacto | Trench Crusade Valencia</title>
 
+    <meta name="description"
+        content="Contacta con el club de Trench Crusade Valencia. Únete a nuestra comunidad de jugadores de wargames.">
+
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS específico de contacto -->
     <link rel="stylesheet" href="css/contacto.css">
+
 </head>
+
 
 <body>
 
-    <header class="hero">
-        <h1>CONTACTO</h1>
-        <p class="subtitle">ÚNETE A LA CRUZADA</p>
-        <p>
-            Estamos aquí para responder tus dudas y darte la bienvenida
-            a nuestra comunidad.
-        </p>
-    </header>
+
+<!-- =====================================================
+     CABECERA Y MENÚ
+===================================================== -->
+
+<header>
+
+    <div class="logo">
+
+        <img src="assets/img/logos.png" alt="Trench Crusade Valencia">
+
+        <h1>Trench Crusade Valencia</h1>
+
+    </div>
 
 
-    <main class="contact-container">
+    <nav>
 
-        <!-- INFORMACIÓN DE CONTACTO -->
+        <ul>
 
-        <section class="info-section">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
 
-            <h2>INFORMACIÓN DE CONTACTO</h2>
+            <li>
+                <a href="#">El Juego</a>
+            </li>
 
-            <div class="info-item">
-                <i class="icon-location"></i>
+            <li>
+                <a href="#">Club</a>
+            </li>
 
-                <div>
-                    <h3>DIRECCIÓN DEL CLUB</h3>
-                    <p>
-                        Rafelbunyol<br>
-                        46138 Valencia, España
-                    </p>
-                </div>
+            <li>
+                <a href="#">Eventos</a>
+            </li>
+
+            <li>
+                <a href="#">Liga</a>
+            </li>
+
+            <li>
+                <a href="#">Campañas</a>
+            </li>
+
+            <li>
+                <a href="#">Escenografía</a>
+            </li>
+
+            <li>
+                <a href="#">Recursos</a>
+            </li>
+
+            <li>
+                <a href="Contacto.html">Contacto</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     CABECERA DE CONTACTO
+===================================================== -->
+
+<section class="hero">
+
+    <h1>CONTACTO</h1>
+
+    <p class="subtitle">
+        ÚNETE A LA CRUZADA
+    </p>
+
+    <p>
+        Estamos aquí para responder tus dudas y darte la bienvenida
+        a nuestra comunidad.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTENIDO DE CONTACTO
+===================================================== -->
+
+<main class="contact-container">
+
+
+    <!-- INFORMACIÓN -->
+
+    <section class="info-section">
+
+        <h2>INFORMACIÓN DE CONTACTO</h2>
+
+
+        <div class="info-item">
+
+            <i class="icon-location"></i>
+
+            <div>
+
+                <h3>DIRECCIÓN DEL CLUB</h3>
+
+                <p>
+                    Rafelbunyol<br>
+                    46138 Valencia, España
+                </p>
+
             </div>
 
-            <div class="info-item">
-                <i class="icon-email"></i>
+        </div>
 
-                <div>
-                    <h3>EMAIL</h3>
-                    <p>
-                        
-                    </p>
-                </div>
+
+        <div class="info-item">
+
+            <i class="icon-email"></i>
+
+            <div>
+
+                <h3>EMAIL</h3>
+
+                <p>
+                    Escríbenos mediante el formulario
+                    de contacto.
+                </p>
+
             </div>
 
-        </section>
+        </div>
 
 
-        <!-- FORMULARIO -->
+    </section>
 
-        <section class="form-section">
 
-            <h2>ENVÍANOS UN MENSAJE</h2>
 
-            
-               <form action="https://formspree.io/f/xnpqjaqe" method="POST">
-            
+    <!-- FORMULARIO -->
 
-                <div class="row">
+    <section class="form-section">
 
-                    <input
-                        type="text"
-                        name="nombre"
-                        placeholder="Tu nombre"
-                        required
-                    >
+        <h2>ENVÍANOS UN MENSAJE</h2>
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Tu email"
-                        required
-                    >
 
-                </div>
+        <form
+            action="https://formspree.io/f/xnpqjaqe"
+            method="POST"
+        >
+
+
+            <div class="row">
 
 
                 <input
                     type="text"
-                    name="asunto"
-                    placeholder="Asunto"
+                    name="nombre"
+                    placeholder="Tu nombre"
                     required
                 >
 
 
-                <textarea
-                    name="mensaje"
-                    placeholder="Tu mensaje"
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Tu email"
                     required
-                ></textarea>
+                >
 
 
-                <button type="submit">
-                    ENVIAR MENSAJE
-                </button>
+            </div>
 
-            </form>
 
-        </section>
+            <input
+                type="text"
+                name="asunto"
+                placeholder="Asunto"
+                required
+            >
 
-    </main>
+
+            <textarea
+                name="mensaje"
+                placeholder="Tu mensaje"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                ENVIAR MENSAJE
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     PIE DE PÁGINA
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Trench Crusade Valencia
+    </p>
+
+</footer>
+
+
+
+<script src="js/main.js"></script>
+
 
 </body>
+
 </html>
 
