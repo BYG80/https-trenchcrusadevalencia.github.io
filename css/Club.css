@@ -1,0 +1,590 @@
+/* =========================================================
+   CLUB
+   ========================================================= */
+
+.club-page {
+    padding-top: 90px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.club-hero {
+
+    min-height: 520px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.78),
+            rgba(0,0,0,.88)
+        ),
+        url("../assets/img/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.club-hero-content {
+
+    max-width: 900px;
+
+}
+
+
+.club-status {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #7c1111;
+
+    border-radius: 4px;
+
+    color: #d9b96d;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.club-hero h2 {
+
+    font-family: Cinzel, serif;
+
+    font-size: 62px;
+
+    line-height: 1.2;
+
+    color: #d9b96d;
+
+    margin-bottom: 25px;
+
+}
+
+
+.club-hero p {
+
+    font-size: 23px;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+
+    margin-bottom: 15px;
+
+}
+
+
+.club-hero span {
+
+    display: block;
+
+    color: #bdb7a5;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+   ========================================================= */
+
+.club-container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   SECCIÓN GENERAL
+   ========================================================= */
+
+.club-section {
+
+    padding: 100px 8%;
+
+    text-align: center;
+
+}
+
+
+.club-section h2,
+.club-dark h2,
+.club-status-section h2 {
+
+    font-family: Cinzel, serif;
+
+    font-size: 45px;
+
+    color: #d9b96d;
+
+    margin-bottom: 25px;
+
+}
+
+
+.club-intro {
+
+    max-width: 850px;
+
+    margin: 0 auto 20px auto;
+
+    color: #c4c0b5;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   SECCIÓN OSCURA
+   ========================================================= */
+
+.club-dark {
+
+    padding: 100px 8%;
+
+    background: #090909;
+
+    text-align: center;
+
+}
+
+
+.club-dark .section-intro {
+
+    max-width: 750px;
+
+    margin: 0 auto 55px auto;
+
+    color: #bdb7a5;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   GRID DEL CLUB
+   ========================================================= */
+
+.club-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.club-card {
+
+    background: #181818;
+
+    border: 1px solid #2c2c2c;
+
+    border-radius: 10px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    min-height: 280px;
+
+    transition: .3s;
+
+}
+
+
+.club-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #7c1111;
+
+}
+
+
+.club-number {
+
+    font-family: Cinzel, serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #7c1111;
+
+    margin-bottom: 18px;
+
+}
+
+
+.club-card h3 {
+
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.club-card p {
+
+    color: #c4c0b5;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================================
+   ESTADO DEL CLUB
+   ========================================================= */
+
+.club-status-section {
+
+    padding: 100px 8%;
+
+    text-align: center;
+
+}
+
+
+.club-status-section > .club-container > p {
+
+    max-width: 800px;
+
+    margin: 0 auto 45px auto;
+
+    color: #c4c0b5;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   CAJA DE ESTADO
+   ========================================================= */
+
+.status-box {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 30px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    text-align: left;
+
+    background: #181818;
+
+    border-left: 4px solid #7c1111;
+
+    border-top: 1px solid #2c2c2c;
+
+    border-right: 1px solid #2c2c2c;
+
+    border-bottom: 1px solid #2c2c2c;
+
+    border-radius: 8px;
+
+}
+
+
+.status-icon {
+
+    font-size: 38px;
+
+    color: #d9b96d;
+
+}
+
+
+.status-box h3 {
+
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
+    font-size: 23px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.status-box p {
+
+    color: #bdb7a5;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   ÚNETE
+   ========================================================= */
+
+.club-join {
+
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.80),
+            rgba(0,0,0,.88)
+        ),
+        url("../assets/img/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.club-join-content {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+
+.club-join h2 {
+
+    font-family: Cinzel, serif;
+
+    font-size: 45px;
+
+    color: #d9b96d;
+
+    margin-bottom: 20px;
+
+}
+
+
+.club-join p {
+
+    color: #d1c7ac;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .club-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    .club-hero h2 {
+
+        font-size: 52px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .club-page {
+
+        padding-top: 140px;
+
+    }
+
+
+    .club-hero {
+
+        min-height: 450px;
+
+    }
+
+
+    .club-hero h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .club-hero p {
+
+        font-size: 19px;
+
+    }
+
+
+    .club-hero span {
+
+        font-size: 16px;
+
+    }
+
+
+    .club-section,
+    .club-dark,
+    .club-status-section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .club-section h2,
+    .club-dark h2,
+    .club-status-section h2,
+    .club-join h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .club-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .club-card {
+
+        min-height: 0;
+
+    }
+
+
+    .status-box {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+    }
+
+
+    .club-join {
+
+        padding: 80px 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .club-hero h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .club-status {
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+
+    .club-card h3 {
+
+        font-size: 21px;
+
+    }
+
+}
+
