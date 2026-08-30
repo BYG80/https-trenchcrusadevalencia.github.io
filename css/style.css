@@ -257,3 +257,155 @@ footer{
         font-size: 40px;
     }
 }
+
+/* ==============================
+   GALERÍA
+   ============================== */
+
+.gallery {
+
+    background: #0d0d0d;
+
+    text-align: center;
+
+    padding: 80px 10%;
+}
+
+
+.gallery h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.gallery-intro {
+
+    max-width: 700px;
+
+    margin: 0 auto 40px auto;
+
+    color: #bdb7a5;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==============================
+   CUADRÍCULA
+   ============================== */
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ==============================
+   CONTENEDOR DE CADA FOTO
+   ============================== */
+
+.gallery-item {
+
+    width: 100%;
+
+    height: 190px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #181818;
+
+    border: 1px solid #2c2c2c;
+
+}
+
+
+/* ==============================
+   IMAGEN
+   ============================== */
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .4s ease;
+
+}
+
+
+/* EFECTO AL PASAR EL RATÓN */
+
+.gallery-item:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ==============================
+   TABLET
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .gallery-item {
+
+        height: 180px;
+
+    }
+
+}
+
+
+/* ==============================
+   MÓVIL
+   ============================== */
+
+@media (max-width: 600px) {
+
+    .gallery {
+
+        padding: 60px 20px;
+
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery-item {
+
+        height: 220px;
+
+    }
+
+}
+
