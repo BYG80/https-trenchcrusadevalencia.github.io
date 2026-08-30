@@ -1,48 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Trench Crusade Valencia</title>
+
+    <title>Contacto | Sons of Heroes</title>
+
     <link rel="stylesheet" href="css/contacto.css">
 </head>
+
 <body>
 
     <header class="hero">
         <h1>CONTACTO</h1>
         <p class="subtitle">ÚNETE A LA CRUZADA</p>
-        <p>Estamos aquí para responder tus dudas y darte la bienvenida a nuestra comunidad.</p>
+        <p>
+            Estamos aquí para responder tus dudas y darte la bienvenida
+            a nuestra comunidad.
+        </p>
     </header>
 
+
     <main class="contact-container">
-        <!-- Sección Información -->
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+
         <section class="info-section">
+
             <h2>INFORMACIÓN DE CONTACTO</h2>
+
             <div class="info-item">
                 <i class="icon-location"></i>
+
                 <div>
                     <h3>DIRECCIÓN DEL CLUB</h3>
-                    <p>C/<br>Rafelbunyol<br>46138 Valencia, España</p>
+                    <p>
+                        Rafelbunyol<br>
+                        46138 Valencia, España
+                    </p>
                 </div>
             </div>
-            <!-- Repetir estructura para otros iconos (Email, Discord, WhatsApp, Horario) -->
+
+            <div class="info-item">
+                <i class="icon-email"></i>
+
+                <div>
+                    <h3>EMAIL</h3>
+                    <p>
+                        info@sons-of-heroes.es
+                    </p>
+                </div>
+            </div>
+
         </section>
 
-        <!-- Sección Formulario -->
-    
+
+        <!-- FORMULARIO -->
+
         <section class="form-section">
+
             <h2>ENVÍANOS UN MENSAJE</h2>
-            <form>
+
+            <form
+                action="https://formspree.io/f/TU_ID"
+                method="POST"
+            >
+
                 <div class="row">
-                    <input type="text" placeholder="Tu nombre">
-                    <input type="email" placeholder="Tu email">
+
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Tu nombre"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Tu email"
+                        required
+                    >
+
                 </div>
-                <input type="text" placeholder="Asunto">
-                <textarea placeholder="Tu mensaje"></textarea>
-                <button type="submit">ENVIAR MENSAJE</button>
+
+
+                <input
+                    type="text"
+                    name="asunto"
+                    placeholder="Asunto"
+                    required
+                >
+
+
+                <textarea
+                    name="mensaje"
+                    placeholder="Tu mensaje"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    ENVIAR MENSAJE
+                </button>
+
             </form>
+
         </section>
+
     </main>
 
 </body>
 </html>
+
