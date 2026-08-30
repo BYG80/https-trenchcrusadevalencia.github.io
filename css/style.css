@@ -354,3 +354,28 @@ footer {
 
 }
 
+/* =========================================================
+   CENTRAR TÍTULOS DE LA PÁGINA EL JUEGO
+   ========================================================= */
+
+.game-container {
+    text-align: center;
+}
+
+.game-container h2 {
+    text-align: center;
+}
+
+.game-container p {
+    text-align: center;
+}
+
+
+/* Los textos de las tarjetas siguen alineados a la izquierda */
+
+.game-cards article,
+.factions article {
+    text-align: left;
+}
+
+
