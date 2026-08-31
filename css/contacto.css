@@ -1,483 +1,117 @@
-```css
-/* =========================================================
-   CONTACTO - SONS OF HEROES
-   ========================================================= */
 
+<head>
 
-/* =========================================================
-   CABECERA DE CONTACTO
-   ========================================================= */
+    <meta charset="UTF-8">
 
-.contact-hero {
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    min-height: 420px;
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.78),
-            rgba(0, 0, 0, 0.78)
-        ),
-        url("../assets/img/hero.jpg");
+    <!-- =========================================================
+         SEO PRINCIPAL
+         ========================================================= -->
 
-    background-size: cover;
-    background-position: center;
+    <title>Contacto | Trench Crusade Valencia | Horta Nord Wargames</title>
 
-    display: flex;
-    flex-direction: column;
+    <meta name="description"
+        content="Contacta con Horta Nord Wargames, comunidad de Trench Crusade en Valencia. Pregunta por partidas, eventos, campañas, club y cómo unirte a nuestra comunidad.">
 
-    justify-content: center;
-    align-items: center;
+    <meta name="robots"
+        content="index, follow">
 
-    text-align: center;
+    <meta name="author"
+        content="Horta Nord Wargames">
 
-    padding: 160px 20px 80px;
+    <meta name="theme-color"
+        content="#111111">
 
-}
 
+    <!-- =========================================================
+         CANONICAL
+         ========================================================= -->
 
-/* Título CONTACTO */
+    <link rel="canonical"
+        href="https://sons-of-heroes.es/contacto.html">
 
-.contact-hero h2 {
 
-    font-family: Cinzel, serif;
+    <!-- =========================================================
+         FAVICON
+         ========================================================= -->
 
-    font-size: 60px;
+    <link rel="icon"
+        href="assets/img/favicon.png">
 
-    color: #d9b96d;
 
-    margin: 0 0 20px 0;
+    <!-- =========================================================
+         OPEN GRAPH
+         ========================================================= -->
 
-    line-height: 1.2;
+    <meta property="og:type"
+        content="website">
 
-}
+    <meta property="og:locale"
+        content="es_ES">
 
+    <meta property="og:title"
+        content="Contacto | Trench Crusade Valencia">
 
-/* SUBTÍTULO */
+    <meta property="og:description"
+        content="Contacta con Horta Nord Wargames y descubre cómo participar en partidas, eventos, campañas y actividades de Trench Crusade en Valencia.">
 
-.contact-hero .subtitle {
+    <meta property="og:url"
+        content="https://sons-of-heroes.es/contacto.html">
 
-    font-family: Cinzel, serif;
+    <meta property="og:site_name"
+        content="Trench Crusade Valencia">
 
-    font-size: 25px;
+    <meta property="og:image"
+        content="https://sons-of-heroes.es/assets/img/hero.jpg">
 
-    color: #ffffff;
+    <meta property="og:image:alt"
+        content="Trench Crusade Valencia - Horta Nord Wargames">
 
-    margin: 0 0 20px 0;
 
-    line-height: 1.4;
+    <!-- =========================================================
+         TWITTER / X
+         ========================================================= -->
 
-}
+    <meta name="twitter:card"
+        content="summary_large_image">
 
+    <meta name="twitter:title"
+        content="Contacto | Trench Crusade Valencia">
 
-/* Texto */
+    <meta name="twitter:description"
+        content="Contacta con Horta Nord Wargames para conocer partidas, eventos, campañas y actividades de Trench Crusade en Valencia.">
 
-.contact-hero > p:last-child {
+    <meta name="twitter:image"
+        content="https://sons-of-heroes.es/assets/img/hero.jpg">
 
-    max-width: 700px;
 
-    font-family: Inter, sans-serif;
+    <!-- =========================================================
+         GOOGLE FONTS
+         ========================================================= -->
 
-    font-size: 18px;
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-    color: #ffffff;
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-    line-height: 1.7;
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    margin: 0;
 
-}
+    <!-- =========================================================
+         CSS
+         ========================================================= -->
 
+    <link rel="stylesheet"
+        href="css/style.css">
 
-/* =========================================================
-   CONTENEDOR PRINCIPAL
-   ========================================================= */
+    <link rel="stylesheet"
+        href="css/contacto.css">
 
-.contact-container {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
-
-    width: 100%;
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding: 100px 40px;
-
-}
-
-
-/* =========================================================
-   INFORMACIÓN DE CONTACTO
-   ========================================================= */
-
-.info-section h2,
-.form-section h2 {
-
-    font-family: Cinzel, serif;
-
-    color: #d9b96d;
-
-    font-size: 35px;
-
-    line-height: 1.3;
-
-    margin: 0 0 40px 0;
-
-}
-
-
-/* Elemento de información */
-
-.info-item {
-
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 20px;
-
-    margin-bottom: 35px;
-
-}
-
-
-/* Título */
-
-.info-item h3 {
-
-    font-family: Cinzel, serif;
-
-    color: #d9b96d;
-
-    font-size: 20px;
-
-    margin: 0 0 10px 0;
-
-}
-
-
-/* Texto */
-
-.info-item p {
-
-    font-family: Inter, sans-serif;
-
-    color: #d1c7ac;
-
-    font-size: 16px;
-
-    line-height: 1.7;
-
-    margin: 0;
-
-}
-
-
-/* =========================================================
-   ICONOS
-   ========================================================= */
-
-.icon-location,
-.icon-email {
-
-    display: block;
-
-    width: 45px;
-
-    height: 45px;
-
-    min-width: 45px;
-
-    border: 1px solid #6d1515;
-
-    border-radius: 50%;
-
-    flex-shrink: 0;
-
-}
-
-
-/* =========================================================
-   FORMULARIO
-   ========================================================= */
-
-.form-section form {
-
-    display: flex;
-
-    flex-direction: column;
-
-    width: 100%;
-
-}
-
-
-/* Dos campos en una fila */
-
-.form-section .row {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
-
-}
-
-
-/* =========================================================
-   CAMPOS
-   ========================================================= */
-
-.form-section input,
-.form-section textarea {
-
-    width: 100%;
-
-    background: #111111;
-
-    border: 1px solid #4a4436;
-
-    border-radius: 4px;
-
-    color: #ffffff;
-
-    padding: 15px;
-
-    margin: 0 0 20px 0;
-
-    font-family: Inter, sans-serif;
-
-    font-size: 16px;
-
-    outline: none;
-
-    transition: border-color 0.3s ease;
-
-}
-
-
-/* Cuando hacemos clic */
-
-.form-section input:focus,
-.form-section textarea:focus {
-
-    border-color: #d9b96d;
-
-}
-
-
-/* Placeholder */
-
-.form-section input::placeholder,
-.form-section textarea::placeholder {
-
-    color: #777777;
-
-}
-
-
-/* Área de mensaje */
-
-.form-section textarea {
-
-    min-height: 180px;
-
-    resize: vertical;
-
-}
-
-
-/* =========================================================
-   BOTÓN
-   ========================================================= */
-
-.form-section button {
-
-    align-self: flex-start;
-
-    background: #7c1111;
-
-    color: #ffffff;
-
-    border: none;
-
-    border-radius: 6px;
-
-    padding: 16px 30px;
-
-    cursor: pointer;
-
-    text-transform: uppercase;
-
-    font-family: Inter, sans-serif;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    transition:
-        background 0.3s ease,
-        transform 0.3s ease;
-
-}
-
-
-/* Hover */
-
-.form-section button:hover {
-
-    background: #b32020;
-
-    transform: translateY(-2px);
-
-}
-
-
-/* =========================================================
-   PIE DE PÁGINA
-   ========================================================= */
-
-footer {
-
-    text-align: center;
-
-    padding: 40px;
-
-    background: #090909;
-
-}
-
-
-/* =========================================================
-   RESPONSIVE - TABLET / MÓVIL
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-
-    /* Cabecera */
-
-    .contact-hero {
-
-        min-height: 350px;
-
-        padding: 150px 20px 60px;
-
-    }
-
-
-    .contact-hero h2 {
-
-        font-size: 40px;
-
-    }
-
-
-    .contact-hero .subtitle {
-
-        font-size: 20px;
-
-    }
-
-
-    .contact-hero > p:last-child {
-
-        font-size: 16px;
-
-    }
-
-
-    /* Contenido */
-
-    .contact-container {
-
-        grid-template-columns: 1fr;
-
-        padding: 60px 20px;
-
-        gap: 50px;
-
-    }
-
-
-    /* Formulario */
-
-    .form-section .row {
-
-        grid-template-columns: 1fr;
-
-        gap: 0;
-
-    }
-
-
-    /* Títulos */
-
-    .info-section h2,
-    .form-section h2 {
-
-        font-size: 28px;
-
-    }
-
-}
-
-
-/* =========================================================
-   MÓVILES PEQUEÑOS
-   ========================================================= */
-
-@media (max-width: 480px) {
-
-
-    .contact-hero {
-
-        padding: 140px 15px 50px;
-
-    }
-
-
-    .contact-hero h2 {
-
-        font-size: 34px;
-
-    }
-
-
-    .contact-hero .subtitle {
-
-        font-size: 18px;
-
-    }
-
-
-    .contact-container {
-
-        padding: 50px 15px;
-
-    }
-
-
-    .info-item {
-
-        gap: 15px;
-
-    }
-
-
-    .form-section button {
-
-        width: 100%;
-
-    }
-
-}
-```
-
-
+</head>
