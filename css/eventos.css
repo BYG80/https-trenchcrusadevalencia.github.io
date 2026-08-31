@@ -1,4 +1,3 @@
-
 /* =========================================================
    HORTA NORD WARGAMES
    EVENTOS.CSS
@@ -11,7 +10,9 @@
 
 .hero-eventos {
     position: relative;
+
     padding: 110px 20px 90px;
+
     background:
         linear-gradient(
             rgba(10, 10, 10, 0.82),
@@ -23,6 +24,8 @@
     background-position: center;
 
     border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
 }
 
 
@@ -62,7 +65,7 @@
 .hero-eventos p {
     max-width: 650px;
 
-    margin: 0;
+    margin: 0 auto;
 
     font-size: 19px;
     line-height: 1.7;
@@ -79,6 +82,7 @@
     display: flex;
 
     align-items: center;
+    justify-content: center;
 
     gap: 25px;
 
@@ -92,6 +96,8 @@
     border: 1px solid rgba(255,255,255,0.08);
 
     border-left: 4px solid currentColor;
+
+    text-align: center;
 }
 
 
@@ -111,6 +117,11 @@
     background: rgba(255,255,255,0.05);
 
     border: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.aviso-contenido {
+    flex: 1;
 }
 
 
@@ -171,7 +182,7 @@
 .titulo-seccion p {
     max-width: 650px;
 
-    margin: auto;
+    margin: 0 auto;
 
     line-height: 1.6;
 
@@ -329,6 +340,8 @@
 
     transition:
         background 0.2s ease;
+
+    text-align: left;
 }
 
 
@@ -431,6 +444,8 @@
     max-width: 1000px;
 
     margin: 30px auto 0;
+
+    text-align: center;
 }
 
 
@@ -470,7 +485,9 @@
 
 
 .sin-eventos p {
-    margin: 0;
+    max-width: 650px;
+
+    margin: 0 auto;
 
     opacity: 0.55;
 
@@ -538,6 +555,8 @@
 
 .evento-contenido {
     padding: 30px;
+
+    text-align: center;
 }
 
 
@@ -584,6 +603,9 @@
 .evento-contenido > p:not(.evento-juego) {
     max-width: 700px;
 
+    margin-left: auto;
+    margin-right: auto;
+
     line-height: 1.65;
 
     opacity: 0.65;
@@ -608,6 +630,8 @@
 
     border-top:
         1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
 }
 
 
@@ -615,6 +639,8 @@
     display: flex;
 
     flex-direction: column;
+
+    align-items: center;
 
     gap: 5px;
 }
@@ -721,6 +747,8 @@
     transition:
         transform 0.2s ease,
         background 0.2s ease;
+
+    text-align: center;
 }
 
 
@@ -749,7 +777,9 @@
 
 
 .tipo-evento p {
-    margin: 0;
+    margin: 0 auto;
+
+    max-width: 280px;
 
     line-height: 1.6;
 
@@ -787,6 +817,13 @@
 
     border:
         1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
+}
+
+
+.cta-eventos .contenedor > div:first-child {
+    flex: 1;
 }
 
 
@@ -817,7 +854,7 @@
 .cta-eventos p {
     max-width: 650px;
 
-    margin: 0;
+    margin: 0 auto;
 
     line-height: 1.6;
 
@@ -903,9 +940,11 @@
     .aviso-eventos {
         flex-direction: column;
 
-        align-items: flex-start;
+        align-items: center;
 
         padding: 25px;
+
+        text-align: center;
     }
 
 
@@ -943,6 +982,8 @@
         min-height: 65px;
 
         padding: 8px;
+
+        text-align: left;
     }
 
 
@@ -975,12 +1016,16 @@
         border-bottom:
             1px solid rgba(255,255,255,0.08);
 
-        justify-content: flex-start;
+        justify-content: center;
+
+        text-align: center;
     }
 
 
     .evento-contenido {
         padding: 22px;
+
+        text-align: center;
     }
 
 
@@ -994,6 +1039,13 @@
             1fr;
 
         gap: 12px;
+
+        text-align: center;
+    }
+
+
+    .evento-datos div {
+        align-items: center;
     }
 
 
@@ -1008,6 +1060,11 @@
     }
 
 
+    .tipo-evento {
+        text-align: center;
+    }
+
+
     .cta-eventos {
         padding: 60px 20px;
     }
@@ -1016,14 +1073,22 @@
     .cta-eventos .contenedor {
         flex-direction: column;
 
-        align-items: flex-start;
+        align-items: center;
 
         padding: 30px;
+
+        text-align: center;
     }
 
 
     .cta-eventos h2 {
         font-size: 23px;
+    }
+
+
+    .cta-eventos p {
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -1039,6 +1104,8 @@
         min-height: 55px;
 
         padding: 6px;
+
+        text-align: left;
     }
 
 
@@ -1057,4 +1124,3 @@
     }
 
 }
-
