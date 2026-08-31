@@ -15,7 +15,9 @@
     <link rel="icon" href="assets/img/favicon.png">
 
 
-    <!-- Google Fonts -->
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -28,12 +30,16 @@
         rel="stylesheet">
 
 
-    <!-- CSS PRINCIPAL -->
+    <!-- =====================================================
+         CSS PRINCIPAL
+         ===================================================== -->
 
     <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- CSS EVENTOS -->
+    <!-- =====================================================
+         CSS EVENTOS
+         ===================================================== -->
 
     <link rel="stylesheet" href="css/eventos.css">
 
@@ -197,19 +203,15 @@
 
 
         <p>
-
             El club se encuentra actualmente en proceso
             de creación. Estamos trabajando para organizar
             nuestras primeras partidas y actividades.
-
         </p>
 
 
         <p>
-
             Consulta periódicamente nuestro calendario
             para conocer las próximas actividades.
-
         </p>
 
     </div>
@@ -246,7 +248,9 @@
 
 
 
-    <!-- CALENDARIO -->
+    <!-- =====================================================
+         CALENDARIO
+         ===================================================== -->
 
     <div class="calendario">
 
@@ -284,7 +288,7 @@
 
 
 
-        <!-- DÍAS -->
+        <!-- DÍAS DE LA SEMANA -->
 
         <div class="dias-semana">
 
@@ -299,6 +303,8 @@
         </div>
 
 
+        <!-- DÍAS -->
+
         <div
             id="diasCalendario"
             class="dias-calendario">
@@ -309,7 +315,9 @@
 
 
 
-    <!-- INFORMACIÓN DEL DÍA -->
+    <!-- =====================================================
+         INFORMACIÓN DEL DÍA
+         ===================================================== -->
 
     <div
         id="eventosDia"
@@ -478,10 +486,8 @@
 
 
             <p>
-
                 Si estás interesado en participar en nuestras
                 futuras actividades, ponte en contacto con nosotros.
-
             </p>
 
         </div>
@@ -511,13 +517,9 @@
 
 <footer>
 
-
     <p>
-
         © 2026 Sons of heroes
-
     </p>
-
 
 </footer>
 
@@ -529,44 +531,32 @@
 
 <script>
 
-
 /* =========================================================
    LISTA DE EVENTOS
-
-   PARA AÑADIR UN EVENTO SOLO TIENES QUE COPIAR
-   UNO DE ESTOS BLOQUES Y CAMBIAR LOS DATOS.
    ========================================================= */
 
-
 const eventos = [
-
 
     {
         fecha: "2026-09-12",
 
-        titulo: "ornada de iniciación",
+        titulo: "Partida Demo Trench Crusade",
 
         juego: "Trench Crusade",
 
-        tipo: "Partida",
+        tipo: "Partida Demo",
 
-        hora: "17:00",
+        hora: "Por determinar",
 
-        lugar: "Rafelbunyol",
+        lugar: "Por determinar",
 
-        plazas: "8",
+        plazas: "Por determinar",
 
         descripcion:
-            "Jornada para conocer el juego, aprender las reglas básicas y disputar una primera partida"
-    },
+            "Partida de demostración de Trench Crusade para conocer el juego, aprender sus reglas básicas y disfrutar de una primera partida."
+    }
 
-
-  
-
-
-    
 ];
-
 
 
 /* =========================================================
@@ -576,22 +566,17 @@ const eventos = [
 const diasCalendario =
     document.getElementById("diasCalendario");
 
-
 const mesActual =
     document.getElementById("mesActual");
-
 
 const eventosDia =
     document.getElementById("eventosDia");
 
-
 const botonAnterior =
     document.getElementById("mesAnterior");
 
-
 const botonSiguiente =
     document.getElementById("mesSiguiente");
-
 
 
 /* =========================================================
@@ -601,7 +586,6 @@ const botonSiguiente =
 let fechaCalendario = new Date();
 
 fechaCalendario.setDate(1);
-
 
 
 /* =========================================================
@@ -626,17 +610,14 @@ const nombresMeses = [
 ];
 
 
-
 /* =========================================================
    MOSTRAR CALENDARIO
    ========================================================= */
 
 function mostrarCalendario() {
 
-
     const año =
         fechaCalendario.getFullYear();
-
 
     const mes =
         fechaCalendario.getMonth();
@@ -649,8 +630,9 @@ function mostrarCalendario() {
     diasCalendario.innerHTML = "";
 
 
-
-    /* PRIMER DÍA */
+    /* =====================================================
+       PRIMER DÍA
+       ===================================================== */
 
     let primerDia =
         new Date(
@@ -660,14 +642,20 @@ function mostrarCalendario() {
         ).getDay();
 
 
+    /*
+       Convertimos el calendario para que
+       empiece en lunes.
+    */
+
     primerDia =
         primerDia === 0
             ? 6
             : primerDia - 1;
 
 
-
-    /* DÍAS DEL MES */
+    /* =====================================================
+       DÍAS DEL MES
+       ===================================================== */
 
     const numeroDias =
         new Date(
@@ -677,8 +665,9 @@ function mostrarCalendario() {
         ).getDate();
 
 
-
-    /* DÍAS DEL MES ANTERIOR */
+    /* =====================================================
+       DÍAS DEL MES ANTERIOR
+       ===================================================== */
 
     const diasMesAnterior =
         new Date(
@@ -686,7 +675,6 @@ function mostrarCalendario() {
             mes,
             0
         ).getDate();
-
 
 
     /* =====================================================
@@ -698,7 +686,6 @@ function mostrarCalendario() {
         i >= 0;
         i--
     ) {
-
 
         const elemento =
             document.createElement("div");
@@ -719,7 +706,6 @@ function mostrarCalendario() {
     }
 
 
-
     /* =====================================================
        DÍAS DEL MES
        ===================================================== */
@@ -729,7 +715,6 @@ function mostrarCalendario() {
         dia <= numeroDias;
         dia++
     ) {
-
 
         const elemento =
             document.createElement("div");
@@ -745,7 +730,6 @@ function mostrarCalendario() {
 
         elemento.dataset.fecha =
             fecha;
-
 
 
         /* NÚMERO */
@@ -767,8 +751,9 @@ function mostrarCalendario() {
         );
 
 
-
-        /* EVENTOS */
+        /* =================================================
+           BUSCAR EVENTOS
+           ================================================= */
 
         const eventosDelDia =
             eventos.filter(
@@ -777,11 +762,13 @@ function mostrarCalendario() {
             );
 
 
+        /* =================================================
+           MARCAR EVENTO
+           ================================================= */
 
         if (
             eventosDelDia.length > 0
         ) {
-
 
             elemento.classList.add(
                 "tiene-evento"
@@ -807,8 +794,9 @@ function mostrarCalendario() {
         }
 
 
-
-        /* CLICK */
+        /* =================================================
+           CLICK
+           ================================================= */
 
         elemento.addEventListener(
             "click",
@@ -824,9 +812,8 @@ function mostrarCalendario() {
     }
 
 
-
     /* =====================================================
-       COMPLETAR CALENDARIO
+       COMPLETAR ÚLTIMA SEMANA
        ===================================================== */
 
     const totalDias =
@@ -840,13 +827,11 @@ function mostrarCalendario() {
         ) % 7;
 
 
-
     for (
         let dia = 1;
         dia <= huecosFinales;
         dia++
     ) {
-
 
         const elemento =
             document.createElement("div");
@@ -869,13 +854,11 @@ function mostrarCalendario() {
 }
 
 
-
 /* =========================================================
    MOSTRAR EVENTOS
    ========================================================= */
 
 function mostrarEventos(fecha) {
-
 
     const eventosEncontrados =
         eventos.filter(
@@ -884,8 +867,9 @@ function mostrarEventos(fecha) {
         );
 
 
-
-    /* QUITAR SELECCIÓN */
+    /* =====================================================
+       QUITAR SELECCIÓN
+       ===================================================== */
 
     document
         .querySelectorAll(".dia")
@@ -897,8 +881,9 @@ function mostrarEventos(fecha) {
         );
 
 
-
-    /* SELECCIONAR */
+    /* =====================================================
+       SELECCIONAR DÍA
+       ===================================================== */
 
     const diaSeleccionado =
         document.querySelector(
@@ -915,7 +900,6 @@ function mostrarEventos(fecha) {
     }
 
 
-
     /* =====================================================
        SIN EVENTOS
        ===================================================== */
@@ -923,7 +907,6 @@ function mostrarEventos(fecha) {
     if (
         eventosEncontrados.length === 0
     ) {
-
 
         eventosDia.innerHTML = `
 
@@ -946,26 +929,24 @@ function mostrarEventos(fecha) {
 
         `;
 
-
         return;
 
     }
 
 
-
-    /* LIMPIAR */
+    /* =====================================================
+       LIMPIAR
+       ===================================================== */
 
     eventosDia.innerHTML = "";
 
 
-
     /* =====================================================
-       CREAR EVENTOS
+       CREAR TARJETA
        ===================================================== */
 
     eventosEncontrados.forEach(
         evento => {
-
 
             const tarjeta =
                 document.createElement(
@@ -977,9 +958,7 @@ function mostrarEventos(fecha) {
                 "tarjeta-evento";
 
 
-
             tarjeta.innerHTML = `
-
 
                 <div class="evento-fecha">
 
@@ -990,7 +969,6 @@ function mostrarEventos(fecha) {
                     </span>
 
                 </div>
-
 
 
                 <div class="evento-contenido">
@@ -1022,7 +1000,6 @@ function mostrarEventos(fecha) {
                         ${evento.descripcion}
 
                     </p>
-
 
 
                     <div class="evento-datos">
@@ -1070,7 +1047,6 @@ function mostrarEventos(fecha) {
                     </div>
 
 
-
                     <a
                         href="club.html"
                         class="boton-evento">
@@ -1095,13 +1071,11 @@ function mostrarEventos(fecha) {
 }
 
 
-
 /* =========================================================
    FORMATEAR FECHA
    ========================================================= */
 
 function formatearFecha(fecha) {
-
 
     const partes =
         fecha.split("-");
@@ -1139,7 +1113,6 @@ function formatearFecha(fecha) {
 }
 
 
-
 /* =========================================================
    MES ANTERIOR
    ========================================================= */
@@ -1147,7 +1120,6 @@ function formatearFecha(fecha) {
 botonAnterior.addEventListener(
     "click",
     () => {
-
 
         fechaCalendario.setMonth(
             fechaCalendario.getMonth() - 1
@@ -1163,7 +1135,6 @@ botonAnterior.addEventListener(
 );
 
 
-
 /* =========================================================
    MES SIGUIENTE
    ========================================================= */
@@ -1171,7 +1142,6 @@ botonAnterior.addEventListener(
 botonSiguiente.addEventListener(
     "click",
     () => {
-
 
         fechaCalendario.setMonth(
             fechaCalendario.getMonth() + 1
@@ -1187,13 +1157,11 @@ botonSiguiente.addEventListener(
 );
 
 
-
 /* =========================================================
-   MENSAJE
+   MENSAJE DE SELECCIÓN
    ========================================================= */
 
 function mostrarMensajeSeleccion() {
-
 
     eventosDia.innerHTML = `
 
@@ -1219,13 +1187,11 @@ function mostrarMensajeSeleccion() {
 }
 
 
-
 /* =========================================================
    INICIAR
    ========================================================= */
 
 mostrarCalendario();
-
 
 </script>
 
@@ -1233,5 +1199,3 @@ mostrarCalendario();
 </body>
 
 </html>
-
-
