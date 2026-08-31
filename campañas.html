@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Campañas | Trench Crusade Valencia</title>
+
+<meta name="description"
+    content="Campañas narrativas de Trench Crusade organizadas por Horta Nord Wargames en Valencia.">
+
+<link rel="icon" href="assets/img/favicon.png">
+
+
+<!-- GOOGLE FONTS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+<!-- CSS PRINCIPAL -->
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<!-- CSS CAMPAÑAS -->
+
+<link rel="stylesheet" href="css/campañas.css">
+```
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+```
+<div class="logo">
+
+    <img
+        src="assets/img/logos.png"
+        alt="Trench Crusade Valencia">
+
+    <h1>
+        Trench Crusade Valencia
+    </h1>
+
+</div>
+
+
+<nav>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="el-Juego.html">
+                El Juego
+            </a>
+        </li>
+
+        <li>
+            <a href="club.html">
+                Club
+            </a>
+        </li>
+
+        <li>
+            <a href="eventos.html">
+                Eventos
+            </a>
+        </li>
+
+        <li>
+            <a href="liga.html">
+                Liga
+            </a>
+        </li>
+
+        <li>
+            <a href="campañas.html" class="active">
+                Campañas
+            </a>
+        </li>
+
+        <li>
+            <a href="escenografia.html">
+                Escenografía
+            </a>
+        </li>
+
+        <li>
+            <a href="recursos.html">
+                Recursos
+            </a>
+        </li>
+
+        <li>
+            <a href="contacto.html">
+                Contacto
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+```
+
+</header>
+
+<!-- =========================================================
+     CONTENIDO
+     ========================================================= -->
+
+<main>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="hero-campañas">
+
+```
+<div class="campañas-hero-content">
+
+    <span class="etiqueta">
+        TRENCH CRUSADE VALENCIA
+    </span>
+
+
+    <h2>
+        Campañas
+    </h2>
+
+
+    <p>
+        Campañas narrativas, guerras y conflictos
+        que decidirán el destino de nuestros campos de batalla.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     INTRODUCCIÓN
+     ========================================================= -->
+
+<section class="intro-campañas">
+
+```
+<div class="titulo-seccion">
+
+    <span>
+        LA GUERRA CONTINÚA
+    </span>
+
+    <h2>
+        Campañas narrativas
+    </h2>
+
+    <p>
+        Las campañas permiten desarrollar partidas conectadas
+        entre sí, donde las victorias, derrotas y decisiones
+        de los jugadores pueden cambiar el curso de la guerra.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     CAMPAÑAS
+     ========================================================= -->
+
+<section class="campañas-activas">
+
+```
+<div class="titulo-seccion">
+
+    <span>
+        CONFLICTOS
+    </span>
+
+    <h2>
+        Nuestras campañas
+    </h2>
+
+    <p>
+        Consulta las campañas activas, sus ejércitos
+        y el desarrollo de cada conflicto.
+    </p>
+
+</div>
+
+
+<div id="listaCampañas" class="lista-campañas">
+
+    <!-- JAVASCRIPT -->
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     PANEL DE CAMPAÑA
+     ========================================================= -->
+
+<section
+    id="detalleCampaña"
+    class="detalle-campaña oculto">
+
+</section>
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
+
+<section class="cta-campañas">
+
+```
+<div class="cta-contenido">
+
+    <div>
+
+        <span>
+            ¿QUIERES PARTICIPAR?
+        </span>
+
+        <h2>
+            Únete a la guerra
+        </h2>
+
+        <p>
+            Si quieres participar en futuras campañas,
+            ponte en contacto con nosotros y forma parte
+            de Horta Nord Wargames.
+        </p>
+
+    </div>
+
+
+    <a
+        href="contacto.html"
+        class="btn">
+
+        QUIERO PARTICIPAR
+
+    </a>
+
+</div>
+```
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+```
+<p>
+    © 2026 Sons of Heroes
+</p>
+```
+
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   CAMPAÑAS
+
+   PARA CREAR UNA NUEVA CAMPAÑA SOLO HAY QUE
+   COPIAR UN BLOQUE Y CAMBIAR LOS DATOS.
+   ========================================================= */
+
+
+const campañas = [
+
+    /*
+    {
+        nombre: "La Guerra de Rafelbunyol",
+
+        estado: "En preparación",
+
+        inicio: "12/09/2026",
+
+        fin: "20/12/2026",
+
+        horario: "17:00",
+
+        lugar: "Por determinar",
+
+        jugadores: "8",
+
+        descripcion:
+            "Campaña narrativa de Trench Crusade en la que las decisiones de los jugadores determinarán el desarrollo de la guerra.",
+
+        ejercitos: [
+            "New Antioch",
+            "Heretic Legion",
+            "Trench Pilgrims"
+        ],
+
+        jornadas: [
+
+            {
+                numero: 1,
+                fecha: "12/09/2026",
+                nombre: "Primera batalla",
+                resultado: "Pendiente"
+            }
+
+        ],
+
+        clasificacion: [
+
+            {
+                ejercito: "New Antioch",
+                victorias: 0,
+                derrotas: 0,
+                puntos: 0
+            },
+
+            {
+                ejercito: "Heretic Legion",
+                victorias: 0,
+                derrotas: 0,
+                puntos: 0
+            },
+
+            {
+                ejercito: "Trench Pilgrims",
+                victorias: 0,
+                derrotas: 0,
+                puntos: 0
+            }
+
+        ]
+
+    }
+    */
+
+];
+
+
+const listaCampañas =
+    document.getElementById("listaCampañas");
+
+const detalleCampaña =
+    document.getElementById("detalleCampaña");
+
+
+/* =========================================================
+   MOSTRAR CAMPAÑAS
+   ========================================================= */
+
+function mostrarCampañas() {
+
+    listaCampañas.innerHTML = "";
+
+
+    if (campañas.length === 0) {
+
+        listaCampañas.innerHTML = `
+
+            <div class="sin-campañas">
+
+                <div class="sin-campañas-icono">
+                    ⚔️
+                </div>
+
+                <h3>
+                    Próximamente
+                </h3>
+
+                <p>
+                    Actualmente estamos preparando
+                    nuestras primeras campañas narrativas.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    campañas.forEach(
+        (campaña, indice) => {
+
+
+            const tarjeta =
+                document.createElement("article");
+
+
+            tarjeta.className =
+                "tarjeta-campaña";
+
+
+            tarjeta.innerHTML = `
+
+                <div class="campaña-cabecera">
+
+                    <span class="estado-campaña">
+                        ${campaña.estado}
+                    </span>
+
+                    <h3>
+                        ${campaña.nombre}
+                    </h3>
+
+                    <p>
+                        ${campaña.descripcion}
+                    </p>
+
+                </div>
+
+
+                <div class="campaña-datos">
+
+                    <div>
+
+                        <strong>
+                            📅 Duración
+                        </strong>
+
+                        <span>
+                            ${campaña.inicio}
+                            —
+                            ${campaña.fin}
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            🕐 Horario
+                        </strong>
+
+                        <span>
+                            ${campaña.horario}
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            📍 Lugar
+                        </strong>
+
+                        <span>
+                            ${campaña.lugar}
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            👥 Jugadores
+                        </strong>
+
+                        <span>
+                            ${campaña.jugadores}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="campaña-ejercitos">
+
+                    <strong>
+                        EJÉRCITOS PARTICIPANTES
+                    </strong>
+
+                    <div class="lista-ejercitos">
+
+                        ${campaña.ejercitos.map(
+                            ejercito => `
+                                <span>
+                                    ${ejercito}
+                                </span>
+                            `
+                        ).join("")}
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="btn boton-campaña"
+                    onclick="mostrarDetalle(${indice})">
+
+                    VER CAMPAÑA
+
+                </button>
+
+            `;
+
+
+            listaCampañas.appendChild(tarjeta);
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   DETALLE DE CAMPAÑA
+   ========================================================= */
+
+function mostrarDetalle(indice) {
+
+    const campaña =
+        campañas[indice];
+
+
+    detalleCampaña.classList.remove(
+        "oculto"
+    );
+
+
+    detalleCampaña.innerHTML = `
+
+        <div class="detalle-contenido">
+
+
+            <button
+                class="cerrar-detalle"
+                onclick="cerrarDetalle()">
+
+                ×
+
+            </button>
+
+
+            <span class="etiqueta">
+                ${campaña.estado}
+            </span>
+
+
+            <h2>
+                ${campaña.nombre}
+            </h2>
+
+
+            <p class="detalle-descripcion">
+                ${campaña.descripcion}
+            </p>
+
+
+            <!-- DATOS -->
+
+            <div class="detalle-datos">
+
+
+                <div>
+
+                    <strong>
+                        📅 Inicio
+                    </strong>
+
+                    <span>
+                        ${campaña.inicio}
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        📅 Final
+                    </strong>
+
+                    <span>
+                        ${campaña.fin}
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        🕐 Horario
+                    </strong>
+
+                    <span>
+                        ${campaña.horario}
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        📍 Lugar
+                    </strong>
+
+                    <span>
+                        ${campaña.lugar}
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- EJÉRCITOS -->
+
+            <div class="detalle-seccion">
+
+                <h3>
+                    Ejércitos participantes
+                </h3>
+
+
+                <div class="lista-ejercitos grande">
+
+                    ${campaña.ejercitos.map(
+                        ejercito => `
+                            <span>
+                                ${ejercito}
+                            </span>
+                        `
+                    ).join("")}
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASIFICACIÓN -->
+
+            <div class="detalle-seccion">
+
+                <h3>
+                    Clasificación
+                </h3>
+
+
+                <div class="tabla-clasificacion">
+
+                    <div class="fila tabla-cabecera">
+
+                        <span>
+                            Ejército
+                        </span>
+
+                        <span>
+                            V
+                        </span>
+
+                        <span>
+                            D
+                        </span>
+
+                        <span>
+                            Puntos
+                        </span>
+
+                    </div>
+
+
+                    ${campaña.clasificacion.map(
+                        equipo => `
+
+                            <div class="fila">
+
+                                <span>
+                                    ${equipo.ejercito}
+                                </span>
+
+                                <span>
+                                    ${equipo.victorias}
+                                </span>
+
+                                <span>
+                                    ${equipo.derrotas}
+                                </span>
+
+                                <span>
+                                    ${equipo.puntos}
+                                </span>
+
+                            </div>
+
+                        `
+                    ).join("")}
+
+                </div>
+
+            </div>
+
+
+            <!-- JORNADAS -->
+
+            <div class="detalle-seccion">
+
+                <h3>
+                    Jornadas
+                </h3>
+
+
+                <div class="jornadas">
+
+                    ${campaña.jornadas.map(
+                        jornada => `
+
+                            <div class="jornada">
+
+                                <div class="jornada-numero">
+                                    ${jornada.numero}
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        ${jornada.nombre}
+                                    </strong>
+
+                                    <span>
+                                        ${jornada.fecha}
+                                    </span>
+
+                                </div>
+
+                                <div class="jornada-resultado">
+                                    ${jornada.resultado}
+                                </div>
+
+                            </div>
+
+                        `
+                    ).join("")}
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    `;
+
+
+    detalleCampaña.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =========================================================
+   CERRAR DETALLE
+   ========================================================= */
+
+function cerrarDetalle() {
+
+    detalleCampaña.classList.add(
+        "oculto"
+    );
+
+}
+
+
+/* =========================================================
+   INICIAR
+   ========================================================= */
+
+mostrarCampañas();
+
+
+</script>
+
+</body>
+
+</html>
