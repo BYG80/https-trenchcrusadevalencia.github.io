@@ -1,0 +1,1275 @@
+/* =========================================================
+HORTA NORD WARGAMES
+CAMPAÑAS.CSS
+========================================================= */
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero-campañas {
+
+```
+min-height: 55vh;
+
+padding: 160px 20px 100px;
+
+background:
+    linear-gradient(
+        rgba(0,0,0,0.78),
+        rgba(0,0,0,0.88)
+    ),
+    url("../assets/img/campañas-bg.jpg");
+
+background-size: cover;
+
+background-position: center;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+text-align: center;
+```
+
+}
+
+.campañas-hero-content {
+
+```
+max-width: 900px;
+
+margin: 0 auto;
+```
+
+}
+
+.hero-campañas .etiqueta {
+
+```
+display: block;
+
+margin-bottom: 20px;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 3px;
+
+opacity: 0.65;
+```
+
+}
+
+.hero-campañas h2 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: clamp(45px, 7vw, 80px);
+
+margin-bottom: 25px;
+
+text-transform: uppercase;
+```
+
+}
+
+.hero-campañas p {
+
+```
+max-width: 700px;
+
+margin: 0 auto;
+
+font-size: 20px;
+
+line-height: 1.8;
+
+opacity: 0.8;
+```
+
+}
+
+/* =========================================================
+TÍTULOS
+========================================================= */
+
+.titulo-seccion {
+
+```
+max-width: 800px;
+
+margin-left: auto;
+margin-right: auto;
+
+text-align: center;
+```
+
+}
+
+.titulo-seccion > span {
+
+```
+display: block;
+
+margin-bottom: 12px;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 3px;
+
+color: #d9b96d;
+
+opacity: 0.7;
+```
+
+}
+
+.titulo-seccion h2 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: clamp(32px, 5vw, 48px);
+
+margin-bottom: 20px;
+
+text-transform: uppercase;
+```
+
+}
+
+.titulo-seccion p {
+
+```
+max-width: 700px;
+
+margin: 0 auto;
+
+line-height: 1.8;
+
+color: #bdb7a5;
+```
+
+}
+
+/* =========================================================
+INTRO
+========================================================= */
+
+.intro-campañas {
+
+```
+padding: 90px 10% 50px;
+```
+
+}
+
+/* =========================================================
+CAMPAÑAS ACTIVAS
+========================================================= */
+
+.campañas-activas {
+
+```
+padding: 60px 10% 100px;
+```
+
+}
+
+.lista-campañas {
+
+```
+max-width: 1100px;
+
+margin: 50px auto 0;
+```
+
+}
+
+/* =========================================================
+TARJETA CAMPAÑA
+========================================================= */
+
+.tarjeta-campaña {
+
+```
+background: #181818;
+
+border: 1px solid #2c2c2c;
+
+border-radius: 10px;
+
+overflow: hidden;
+
+transition: 0.3s;
+```
+
+}
+
+.tarjeta-campaña:hover {
+
+```
+transform: translateY(-6px);
+
+border-color: #7c1111;
+```
+
+}
+
+/* =========================================================
+CABECERA CAMPAÑA
+========================================================= */
+
+.campaña-cabecera {
+
+```
+padding: 40px;
+
+text-align: center;
+
+border-bottom: 1px solid #2c2c2c;
+```
+
+}
+
+.estado-campaña {
+
+```
+display: inline-block;
+
+padding: 7px 14px;
+
+margin-bottom: 18px;
+
+border-radius: 6px;
+
+background: #7c1111;
+
+color: white;
+
+font-size: 11px;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+
+text-transform: uppercase;
+```
+
+}
+
+.campaña-cabecera h3 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: clamp(25px, 4vw, 38px);
+
+margin-bottom: 15px;
+
+text-transform: uppercase;
+```
+
+}
+
+.campaña-cabecera p {
+
+```
+max-width: 750px;
+
+margin: 0 auto;
+
+color: #bdb7a5;
+
+line-height: 1.7;
+```
+
+}
+
+/* =========================================================
+DATOS
+========================================================= */
+
+.campaña-datos {
+
+```
+display: grid;
+
+grid-template-columns:
+    repeat(4, 1fr);
+
+border-bottom: 1px solid #2c2c2c;
+```
+
+}
+
+.campaña-datos div {
+
+```
+padding: 25px;
+
+text-align: center;
+
+border-right: 1px solid #2c2c2c;
+```
+
+}
+
+.campaña-datos div:last-child {
+
+```
+border-right: none;
+```
+
+}
+
+.campaña-datos strong {
+
+```
+display: block;
+
+margin-bottom: 8px;
+
+color: #d9b96d;
+
+font-size: 10px;
+
+letter-spacing: 1px;
+
+text-transform: uppercase;
+```
+
+}
+
+.campaña-datos span {
+
+```
+font-size: 14px;
+
+font-weight: 600;
+```
+
+}
+
+/* =========================================================
+EJÉRCITOS
+========================================================= */
+
+.campaña-ejercitos {
+
+```
+padding: 30px 40px;
+
+text-align: center;
+
+border-bottom: 1px solid #2c2c2c;
+```
+
+}
+
+.campaña-ejercitos > strong {
+
+```
+display: block;
+
+margin-bottom: 18px;
+
+color: #d9b96d;
+
+font-size: 11px;
+
+letter-spacing: 2px;
+```
+
+}
+
+.lista-ejercitos {
+
+```
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: center;
+
+gap: 10px;
+```
+
+}
+
+.lista-ejercitos span {
+
+```
+padding: 9px 15px;
+
+border: 1px solid #3a3a3a;
+
+border-radius: 6px;
+
+background: #101010;
+
+color: #bdb7a5;
+
+font-size: 12px;
+
+font-weight: 600;
+```
+
+}
+
+/* =========================================================
+BOTÓN CAMPAÑA
+========================================================= */
+
+.boton-campaña {
+
+```
+display: block;
+
+width: fit-content;
+
+margin: 30px auto;
+
+border: none;
+
+cursor: pointer;
+```
+
+}
+
+.boton-campaña:hover {
+
+```
+background: #b32020;
+```
+
+}
+
+/* =========================================================
+SIN CAMPAÑAS
+========================================================= */
+
+.sin-campañas {
+
+```
+padding: 70px 30px;
+
+background: #181818;
+
+border: 1px solid #2c2c2c;
+
+border-radius: 10px;
+
+text-align: center;
+```
+
+}
+
+.sin-campañas-icono {
+
+```
+margin-bottom: 20px;
+
+font-size: 45px;
+```
+
+}
+
+.sin-campañas h3 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: 28px;
+
+margin-bottom: 15px;
+```
+
+}
+
+.sin-campañas p {
+
+```
+max-width: 600px;
+
+margin: 0 auto;
+
+color: #bdb7a5;
+
+line-height: 1.7;
+```
+
+}
+
+/* =========================================================
+DETALLE CAMPAÑA
+========================================================= */
+
+.detalle-campaña {
+
+```
+padding: 100px 10%;
+
+background: #101010;
+
+border-top: 1px solid #2c2c2c;
+
+border-bottom: 1px solid #2c2c2c;
+```
+
+}
+
+.detalle-campaña.oculto {
+
+```
+display: none;
+```
+
+}
+
+.detalle-contenido {
+
+```
+position: relative;
+
+max-width: 1100px;
+
+margin: 0 auto;
+```
+
+}
+
+.detalle-contenido > .etiqueta {
+
+```
+display: block;
+
+margin-bottom: 15px;
+
+color: #d9b96d;
+
+font-size: 11px;
+
+font-weight: 800;
+
+letter-spacing: 2px;
+
+text-transform: uppercase;
+```
+
+}
+
+.detalle-contenido h2 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: clamp(32px, 5vw, 55px);
+
+margin-bottom: 20px;
+
+text-transform: uppercase;
+```
+
+}
+
+.detalle-descripcion {
+
+```
+max-width: 800px;
+
+color: #bdb7a5;
+
+line-height: 1.8;
+```
+
+}
+
+/* =========================================================
+CERRAR
+========================================================= */
+
+.cerrar-detalle {
+
+```
+position: absolute;
+
+top: 0;
+
+right: 0;
+
+width: 45px;
+
+height: 45px;
+
+border: 1px solid #3a3a3a;
+
+border-radius: 6px;
+
+background: #181818;
+
+color: white;
+
+font-size: 30px;
+
+cursor: pointer;
+```
+
+}
+
+.cerrar-detalle:hover {
+
+```
+background: #7c1111;
+```
+
+}
+
+/* =========================================================
+DATOS DETALLE
+========================================================= */
+
+.detalle-datos {
+
+```
+display: grid;
+
+grid-template-columns:
+    repeat(4, 1fr);
+
+margin-top: 40px;
+
+background: #181818;
+
+border: 1px solid #2c2c2c;
+
+border-radius: 10px;
+```
+
+}
+
+.detalle-datos div {
+
+```
+padding: 25px;
+
+text-align: center;
+
+border-right: 1px solid #2c2c2c;
+```
+
+}
+
+.detalle-datos div:last-child {
+
+```
+border-right: none;
+```
+
+}
+
+.detalle-datos strong {
+
+```
+display: block;
+
+margin-bottom: 8px;
+
+color: #d9b96d;
+
+font-size: 10px;
+
+text-transform: uppercase;
+
+letter-spacing: 1px;
+```
+
+}
+
+.detalle-datos span {
+
+```
+font-weight: 600;
+```
+
+}
+
+/* =========================================================
+SECCIONES DETALLE
+========================================================= */
+
+.detalle-seccion {
+
+```
+margin-top: 60px;
+```
+
+}
+
+.detalle-seccion h3 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: 25px;
+
+margin-bottom: 25px;
+
+text-transform: uppercase;
+```
+
+}
+
+/* =========================================================
+EJÉRCITOS GRANDES
+========================================================= */
+
+.lista-ejercitos.grande {
+
+```
+justify-content: flex-start;
+```
+
+}
+
+.lista-ejercitos.grande span {
+
+```
+padding: 12px 18px;
+
+font-size: 13px;
+```
+
+}
+
+/* =========================================================
+TABLA CLASIFICACIÓN
+========================================================= */
+
+.tabla-clasificacion {
+
+```
+background: #181818;
+
+border: 1px solid #2c2c2c;
+
+border-radius: 10px;
+
+overflow: hidden;
+```
+
+}
+
+.fila {
+
+```
+display: grid;
+
+grid-template-columns:
+    1fr 100px 100px 120px;
+
+align-items: center;
+
+border-bottom: 1px solid #2c2c2c;
+```
+
+}
+
+.fila:last-child {
+
+```
+border-bottom: none;
+```
+
+}
+
+.fila span {
+
+```
+padding: 18px 20px;
+
+text-align: center;
+```
+
+}
+
+.fila span:first-child {
+
+```
+text-align: left;
+
+font-weight: 600;
+```
+
+}
+
+.tabla-cabecera {
+
+```
+background: #101010;
+```
+
+}
+
+.tabla-cabecera span {
+
+```
+color: #d9b96d;
+
+font-size: 11px;
+
+font-weight: 800;
+
+text-transform: uppercase;
+```
+
+}
+
+/* =========================================================
+JORNADAS
+========================================================= */
+
+.jornadas {
+
+```
+display: flex;
+
+flex-direction: column;
+
+gap: 12px;
+```
+
+}
+
+.jornada {
+
+```
+display: grid;
+
+grid-template-columns:
+    60px 1fr 150px;
+
+align-items: center;
+
+gap: 20px;
+
+padding: 18px;
+
+background: #181818;
+
+border: 1px solid #2c2c2c;
+
+border-radius: 6px;
+```
+
+}
+
+.jornada-numero {
+
+```
+width: 45px;
+
+height: 45px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background: #7c1111;
+
+border-radius: 6px;
+
+font-family: Cinzel, serif;
+
+font-weight: 700;
+```
+
+}
+
+.jornada strong {
+
+```
+display: block;
+
+margin-bottom: 5px;
+```
+
+}
+
+.jornada span {
+
+```
+color: #bdb7a5;
+
+font-size: 13px;
+```
+
+}
+
+.jornada-resultado {
+
+```
+text-align: right;
+
+color: #d9b96d;
+
+font-size: 13px;
+
+font-weight: 700;
+```
+
+}
+
+/* =========================================================
+CTA
+========================================================= */
+
+.cta-campañas {
+
+```
+padding: 100px 10%;
+```
+
+}
+
+.cta-contenido {
+
+```
+max-width: 1100px;
+
+margin: 0 auto;
+
+padding: 50px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 40px;
+
+background: #181818;
+
+border: 1px solid #2c2c2c;
+
+border-radius: 10px;
+```
+
+}
+
+.cta-contenido > div {
+
+```
+flex: 1;
+```
+
+}
+
+.cta-contenido span {
+
+```
+display: block;
+
+margin-bottom: 10px;
+
+color: #d9b96d;
+
+font-size: 11px;
+
+font-weight: 800;
+
+letter-spacing: 2px;
+```
+
+}
+
+.cta-contenido h2 {
+
+```
+font-family: Cinzel, serif;
+
+color: #d9b96d;
+
+font-size: 32px;
+
+margin-bottom: 12px;
+
+text-transform: uppercase;
+```
+
+}
+
+.cta-contenido p {
+
+```
+max-width: 650px;
+
+color: #bdb7a5;
+
+line-height: 1.7;
+```
+
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+```
+.campaña-datos {
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+}
+
+
+.campaña-datos div:nth-child(2) {
+
+    border-right: none;
+
+}
+
+
+.detalle-datos {
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+}
+
+
+.detalle-datos div:nth-child(2) {
+
+    border-right: none;
+
+}
+
+
+.fila {
+
+    grid-template-columns:
+        1fr 70px 70px 90px;
+
+}
+```
+
+}
+
+@media (max-width: 768px) {
+
+```
+.hero-campañas {
+
+    min-height: 60vh;
+
+    padding: 140px 20px 80px;
+
+}
+
+
+.intro-campañas,
+.campañas-activas {
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+}
+
+
+.campaña-cabecera {
+
+    padding: 30px 20px;
+
+}
+
+
+.campaña-datos {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.campaña-datos div {
+
+    border-right: none;
+
+    border-bottom: 1px solid #2c2c2c;
+
+}
+
+
+.campaña-datos div:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.campaña-ejercitos {
+
+    padding: 25px 20px;
+
+}
+
+
+.detalle-campaña {
+
+    padding: 70px 20px;
+
+}
+
+
+.detalle-datos {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.detalle-datos div {
+
+    border-right: none;
+
+    border-bottom: 1px solid #2c2c2c;
+
+}
+
+
+.detalle-datos div:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.fila {
+
+    grid-template-columns:
+        1fr 50px 50px 70px;
+
+}
+
+
+.fila span {
+
+    padding: 14px 8px;
+
+    font-size: 12px;
+
+}
+
+
+.fila span:first-child {
+
+    text-align: left;
+
+}
+
+
+.jornada {
+
+    grid-template-columns:
+        50px 1fr;
+
+}
+
+
+.jornada-resultado {
+
+    grid-column: 2;
+
+    text-align: left;
+
+}
+
+
+.cta-campañas {
+
+    padding: 70px 20px;
+
+}
+
+
+.cta-contenido {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 35px 25px;
+
+}
+
+
+.cta-contenido p {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+```
+
+}
+
+@media (max-width: 450px) {
+
+```
+.hero-campañas h2 {
+
+    font-size: 40px;
+
+}
+
+
+.campaña-cabecera h3 {
+
+    font-size: 24px;
+
+}
+
+
+.tabla-clasificacion {
+
+    overflow-x: auto;
+
+}
+
+
+.fila {
+
+    min-width: 420px;
+
+}
+```
+
+}
