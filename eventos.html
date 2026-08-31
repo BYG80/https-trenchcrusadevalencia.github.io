@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,19 @@
 
     <title>Eventos | Horta Nord Wargames</title>
 
-    <!-- CSS PRINCIPAL -->
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- CSS DE EVENTOS -->
-  <link rel="stylesheet" href="css/eventos.css">
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eventos.css">
+
 </head>
 
 
 <body>
+
 
     <!-- =====================================================
          CABECERA
@@ -29,32 +34,75 @@
 
         <div class="contenedor cabecera-contenido">
 
-            <a href="../index.html" class="logo">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
                 HORTA NORD
+
                 <span>WARGAMES</span>
+
             </a>
 
 
+            <!-- MENÚ -->
+
             <nav class="navegacion">
 
-        
-            <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
 
-            <li><a href="el-Juego.html">El Juego</a></li>
+                <li>
+                    <a href="el-Juego.html">
+                        El Juego
+                    </a>
+                </li>
 
-            <li><a href="club.html">Club</a></li>
+                <li>
+                    <a href="club.html">
+                        Club
+                    </a>
+                </li>
 
-            <li><a href="eventos.html">Eventos</a></li>
+                <li>
+                    <a href="eventos.html" class="activo">
+                        Eventos
+                    </a>
+                </li>
 
-            <li><a href="#">Liga</a></li>
+                <li>
+                    <a href="#">
+                        Liga
+                    </a>
+                </li>
 
-            <li><a href="#">Campañas</a></li>
+                <li>
+                    <a href="#">
+                        Campañas
+                    </a>
+                </li>
 
-            <li><a href="escenografia.html">Escenografía</a></li>
+                <li>
+                    <a href="escenografia.html">
+                        Escenografía
+                    </a>
+                </li>
 
-            <li><a href="recursos.html">Recursos</a></li>
+                <li>
+                    <a href="recursos.html">
+                        Recursos
+                    </a>
+                </li>
 
-            <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
 
             </nav>
 
@@ -63,19 +111,31 @@
     </header>
 
 
+
     <!-- =====================================================
-         HERO
+         CONTENIDO
          ===================================================== -->
 
     <main>
+
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
 
         <section class="hero-eventos">
 
             <div class="contenedor">
 
-                <span class="etiqueta">HORTA NORD WARGAMES</span>
+                <span class="etiqueta">
+                    HORTA NORD WARGAMES
+                </span>
 
-                <h1>Eventos</h1>
+
+                <h1>
+                    Eventos
+                </h1>
+
 
                 <p>
                     Partidas, jornadas, torneos y encuentros
@@ -87,19 +147,25 @@
         </section>
 
 
+
         <!-- =================================================
-             AVISO CREACIÓN DEL CLUB
+             AVISO
              ================================================= -->
 
         <section class="contenedor aviso-eventos">
+
 
             <div class="aviso-icono">
                 🎲
             </div>
 
+
             <div class="aviso-contenido">
 
-                <h2>Estamos preparando nuestros primeros eventos</h2>
+                <h2>
+                    Estamos preparando nuestros primeros eventos
+                </h2>
+
 
                 <p>
                     Horta Nord Wargames se encuentra actualmente
@@ -107,6 +173,7 @@
                     organizar nuestras primeras partidas y actividades
                     en Rafelbunyol.
                 </p>
+
 
                 <p>
                     Consulta periódicamente nuestro calendario para
@@ -118,6 +185,7 @@
         </section>
 
 
+
         <!-- =================================================
              CALENDARIO
              ================================================= -->
@@ -126,11 +194,20 @@
 
             <div class="contenedor">
 
+
+                <!-- TÍTULO -->
+
                 <div class="titulo-seccion">
 
-                    <span>CALENDARIO</span>
+                    <span>
+                        CALENDARIO
+                    </span>
 
-                    <h2>Próximos eventos</h2>
+
+                    <h2>
+                        Próximos eventos
+                    </h2>
+
 
                     <p>
                         Consulta nuestras partidas y actividades.
@@ -140,27 +217,45 @@
                 </div>
 
 
-                <!-- CALENDARIO -->
+
+                <!-- =================================================
+                     CALENDARIO
+                     ================================================= -->
 
                 <div class="calendario">
 
-                    <!-- CABECERA CALENDARIO -->
+
+                    <!-- CABECERA -->
 
                     <div class="calendario-header">
 
-                        <button id="mesAnterior" class="boton-calendario">
+
+                        <button
+                            id="mesAnterior"
+                            class="boton-calendario"
+                            aria-label="Mes anterior">
+
                             ‹
+
                         </button>
+
 
                         <h3 id="mesActual">
                             Agosto 2026
                         </h3>
 
-                        <button id="mesSiguiente" class="boton-calendario">
+
+                        <button
+                            id="mesSiguiente"
+                            class="boton-calendario"
+                            aria-label="Mes siguiente">
+
                             ›
+
                         </button>
 
                     </div>
+
 
 
                     <!-- DÍAS DE LA SEMANA -->
@@ -178,40 +273,56 @@
                     </div>
 
 
-                    <!-- DÍAS -->
 
-                    <div id="diasCalendario" class="dias-calendario">
+                    <!-- DÍAS DEL MES -->
+
+                    <div
+                        id="diasCalendario"
+                        class="dias-calendario">
+
                     </div>
 
                 </div>
+
 
 
                 <!-- =================================================
                      INFORMACIÓN DEL DÍA
                      ================================================= -->
 
-                <div id="eventosDia" class="eventos-dia">
+                <div
+                    id="eventosDia"
+                    class="eventos-dia">
+
 
                     <div class="sin-eventos">
+
 
                         <div class="sin-eventos-icono">
                             📅
                         </div>
 
-                        <h3>Selecciona un día</h3>
+
+                        <h3>
+                            Selecciona un día
+                        </h3>
+
 
                         <p>
                             Pulsa sobre un día del calendario
                             para consultar los eventos.
                         </p>
 
+
                     </div>
+
 
                 </div>
 
             </div>
 
         </section>
+
 
 
         <!-- =================================================
@@ -222,17 +333,25 @@
 
             <div class="contenedor">
 
+
                 <div class="titulo-seccion">
 
-                    <span>¿QUÉ HACEMOS?</span>
+                    <span>
+                        ¿QUÉ HACEMOS?
+                    </span>
 
-                    <h2>Tipos de eventos</h2>
+                    <h2>
+                        Tipos de eventos
+                    </h2>
 
                 </div>
 
 
+
                 <div class="grid-tipos">
 
+
+                    <!-- PARTIDAS -->
 
                     <article class="tipo-evento">
 
@@ -240,15 +359,23 @@
                             🎲
                         </div>
 
-                        <h3>Partidas abiertas</h3>
+
+                        <h3>
+                            Partidas abiertas
+                        </h3>
+
 
                         <p>
-                            Partidas para jugadores del club y
-                            personas que quieran conocer el hobby.
+                            Partidas para jugadores del club
+                            y personas que quieran conocer
+                            el hobby.
                         </p>
 
                     </article>
 
+
+
+                    <!-- INICIACIÓN -->
 
                     <article class="tipo-evento">
 
@@ -256,7 +383,11 @@
                             ⚔️
                         </div>
 
-                        <h3>Jornadas de iniciación</h3>
+
+                        <h3>
+                            Jornadas de iniciación
+                        </h3>
+
 
                         <p>
                             Aprende a jugar y descubre nuevos
@@ -266,13 +397,20 @@
                     </article>
 
 
+
+                    <!-- TORNEOS -->
+
                     <article class="tipo-evento">
 
                         <div class="tipo-icono">
                             🏆
                         </div>
 
-                        <h3>Torneos</h3>
+
+                        <h3>
+                            Torneos
+                        </h3>
+
 
                         <p>
                             Competición organizada para aquellos
@@ -282,13 +420,20 @@
                     </article>
 
 
+
+                    <!-- TALLERES -->
+
                     <article class="tipo-evento">
 
                         <div class="tipo-icono">
                             🛠️
                         </div>
 
-                        <h3>Talleres</h3>
+
+                        <h3>
+                            Talleres
+                        </h3>
+
 
                         <p>
                             Pintura, modelismo, escenografía,
@@ -297,11 +442,13 @@
 
                     </article>
 
+
                 </div>
 
             </div>
 
         </section>
+
 
 
         <!-- =================================================
@@ -312,11 +459,18 @@
 
             <div class="contenedor">
 
+
                 <div>
 
-                    <span>¿QUIERES PARTICIPAR?</span>
+                    <span>
+                        ¿QUIERES PARTICIPAR?
+                    </span>
 
-                    <h2>Forma parte de Horta Nord Wargames</h2>
+
+                    <h2>
+                        Forma parte de Horta Nord Wargames
+                    </h2>
+
 
                     <p>
                         Si estás interesado en participar en nuestras
@@ -327,15 +481,23 @@
                 </div>
 
 
-                <a href="../unirse/" class="boton-principal">
-                    QUIERO UNIRME
+
+                <a
+                    href="contacto.html"
+                    class="boton-principal">
+
+                    QUIERO PARTICIPAR
+
                 </a>
+
 
             </div>
 
         </section>
 
+
     </main>
+
 
 
     <!-- =====================================================
@@ -344,14 +506,24 @@
 
     <footer class="footer">
 
+
         <div class="contenedor footer-contenido">
+
+
+            <!-- INFORMACIÓN -->
 
             <div>
 
                 <div class="logo">
+
                     HORTA NORD
-                    <span>WARGAMES</span>
+
+                    <span>
+                        WARGAMES
+                    </span>
+
                 </div>
+
 
                 <p>
                     Comunidad de wargames en Rafelbunyol
@@ -361,21 +533,50 @@
             </div>
 
 
+
+            <!-- ENLACES -->
+
             <div class="footer-enlaces">
 
-                <a href="../index.html">Inicio</a>
+                <a href="index.html">
+                    Inicio
+                </a>
 
-                <a href="../club/">El Club</a>
 
-                <a href="./">Eventos</a>
+                <a href="el-Juego.html">
+                    El Juego
+                </a>
 
-                <a href="../recursos/">Recursos</a>
 
-                <a href="../unirse/">Únete</a>
+                <a href="club.html">
+                    Club
+                </a>
+
+
+                <a href="eventos.html">
+                    Eventos
+                </a>
+
+
+                <a href="escenografia.html">
+                    Escenografía
+                </a>
+
+
+                <a href="recursos.html">
+                    Recursos
+                </a>
+
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
 
             </div>
 
+
         </div>
+
 
 
         <div class="footer-bottom">
@@ -383,6 +584,7 @@
             © 2026 Horta Nord Wargames
 
         </div>
+
 
     </footer>
 
@@ -394,101 +596,151 @@
 
     <script>
 
-        /* =====================================================
-           CONFIGURACIÓN DE EVENTOS
 
+        /* =====================================================
+           LISTA DE EVENTOS
            =====================================================
 
-           AQUÍ ES DONDE AÑADIRÁS LOS EVENTOS.
+           =====================================================
+           IMPORTANTE
 
-           Formato:
+           ESTA ES LA ÚNICA ZONA QUE NECESITAS MODIFICAR
+           PARA AÑADIR O ELIMINAR EVENTOS.
+
+           FORMATO:
 
            {
-               fecha: "2026-09-12",
-               titulo: "Partida de Trench Crusade",
-               juego: "Trench Crusade",
-               tipo: "Partida",
+               fecha: "AAAA-MM-DD",
+               titulo: "Nombre del evento",
+               juego: "Juego",
+               tipo: "Tipo de evento",
                hora: "17:00",
                lugar: "Rafelbunyol",
                plazas: "8",
-               descripcion: "Partida abierta para jugadores..."
+               descripcion: "Descripción del evento."
            }
 
-           Puedes añadir tantos eventos como quieras.
-        */
+           ===================================================== */
 
 
         const eventos = [
 
 
+            /* =================================================
+               EJEMPLO 1
+               ================================================= */
+
             {
                 fecha: "2026-09-12",
+
                 titulo: "Partida de Trench Crusade",
+
                 juego: "Trench Crusade",
+
                 tipo: "Partida",
+
                 hora: "17:00",
+
                 lugar: "Rafelbunyol",
+
                 plazas: "8",
+
                 descripcion:
                     "Partida abierta de iniciación a Trench Crusade. Ideal para jugadores nuevos."
             },
 
 
+
+            /* =================================================
+               EJEMPLO 2
+               ================================================= */
+
             {
                 fecha: "2026-09-19",
+
                 titulo: "Jornada de iniciación",
+
                 juego: "Trench Crusade",
+
                 tipo: "Iniciación",
+
                 hora: "17:00",
+
                 lugar: "Rafelbunyol",
+
                 plazas: "10",
+
                 descripcion:
                     "Jornada para conocer el juego, aprender las reglas básicas y disputar una primera partida."
             },
 
 
+
+            /* =================================================
+               EJEMPLO 3
+               ================================================= */
+
             {
                 fecha: "2026-09-26",
+
                 titulo: "Tarde de wargames",
+
                 juego: "Varios",
+
                 tipo: "Jornada",
+
                 hora: "16:30",
+
                 lugar: "Rafelbunyol",
+
                 plazas: "12",
+
                 descripcion:
                     "Tarde dedicada a los wargames, juegos de miniaturas y demostraciones."
             }
 
+
         ];
 
 
+
         /* =====================================================
-           VARIABLES
+           ELEMENTOS DEL DOM
            ===================================================== */
 
         const diasCalendario =
             document.getElementById("diasCalendario");
 
+
         const mesActual =
             document.getElementById("mesActual");
+
 
         const eventosDia =
             document.getElementById("eventosDia");
 
+
         const botonAnterior =
             document.getElementById("mesAnterior");
+
 
         const botonSiguiente =
             document.getElementById("mesSiguiente");
 
+
+
+        /* =====================================================
+           FECHA ACTUAL
+           ===================================================== */
 
         let fechaCalendario = new Date();
 
         fechaCalendario.setDate(1);
 
 
+
         /* =====================================================
-           NOMBRES
+           NOMBRES DE LOS MESES
            ===================================================== */
 
         const nombresMeses = [
@@ -509,37 +761,60 @@
         ];
 
 
+
         /* =====================================================
            MOSTRAR CALENDARIO
            ===================================================== */
 
         function mostrarCalendario() {
 
+
             const año =
                 fechaCalendario.getFullYear();
+
 
             const mes =
                 fechaCalendario.getMonth();
 
 
+
+            /* NOMBRE DEL MES */
+
             mesActual.textContent =
                 nombresMeses[mes] + " " + año;
 
 
+
+            /* LIMPIAR */
+
             diasCalendario.innerHTML = "";
 
 
-            /*
-             Primer día del mes
-            */
+
+            /* =================================================
+               PRIMER DÍA DEL MES
+               ================================================= */
 
             let primerDia =
-                new Date(año, mes, 1).getDay();
+                new Date(
+                    año,
+                    mes,
+                    1
+                ).getDay();
+
 
 
             /*
-             Convertimos domingo = 0
-             a lunes = 0
+               JavaScript:
+
+               Domingo = 0
+               Lunes = 1
+               ...
+
+               Nosotros queremos:
+
+               Lunes = 0
+               Domingo = 6
             */
 
             primerDia =
@@ -548,60 +823,89 @@
                     : primerDia - 1;
 
 
-            /*
-             Número de días
-            */
+
+            /* =================================================
+               NÚMERO DE DÍAS
+               ================================================= */
 
             const numeroDias =
-                new Date(año, mes + 1, 0).getDate();
+                new Date(
+                    año,
+                    mes + 1,
+                    0
+                ).getDate();
 
 
-            /*
-             Días del mes anterior
-            */
+
+            /* =================================================
+               DÍAS DEL MES ANTERIOR
+               ================================================= */
 
             const diasMesAnterior =
-                new Date(año, mes, 0).getDate();
+                new Date(
+                    año,
+                    mes,
+                    0
+                ).getDate();
 
 
-            /*
-             Huecos iniciales
-            */
 
-            for (let i = primerDia - 1; i >= 0; i--) {
+            /* =================================================
+               DÍAS DEL MES ANTERIOR
+               ================================================= */
+
+            for (
+                let i = primerDia - 1;
+                i >= 0;
+                i--
+            ) {
+
 
                 const dia =
                     diasMesAnterior - i;
 
+
                 const elemento =
                     document.createElement("div");
+
 
                 elemento.className =
                     "dia otro-mes";
 
+
                 elemento.textContent =
                     dia;
 
-                diasCalendario.appendChild(elemento);
+
+                diasCalendario.appendChild(
+                    elemento
+                );
+
             }
 
 
-            /*
-             Días actuales
-            */
 
-            for (let dia = 1; dia <= numeroDias; dia++) {
+            /* =================================================
+               DÍAS DEL MES ACTUAL
+               ================================================= */
+
+            for (
+                let dia = 1;
+                dia <= numeroDias;
+                dia++
+            ) {
+
 
                 const elemento =
                     document.createElement("div");
+
 
                 elemento.className =
                     "dia";
 
 
-                /*
-                 Fecha
-                */
+
+                /* FECHA */
 
                 const fecha =
                     `${año}-${String(mes + 1).padStart(2, "0")}-${String(dia).padStart(2, "0")}`;
@@ -611,75 +915,104 @@
                     fecha;
 
 
-                /*
-                 Número
-                */
+
+                /* NÚMERO DEL DÍA */
 
                 const numero =
                     document.createElement("span");
 
+
                 numero.className =
                     "numero-dia";
+
 
                 numero.textContent =
                     dia;
 
-                elemento.appendChild(numero);
+
+                elemento.appendChild(
+                    numero
+                );
 
 
-                /*
-                 Eventos
-                */
+
+                /* =================================================
+                   COMPROBAR EVENTOS
+                   ================================================= */
 
                 const eventosDelDia =
                     eventos.filter(
-                        evento => evento.fecha === fecha
+                        evento =>
+                            evento.fecha === fecha
                     );
 
 
-                if (eventosDelDia.length > 0) {
 
-                    elemento.classList.add("tiene-evento");
+                if (
+                    eventosDelDia.length > 0
+                ) {
+
+
+                    elemento.classList.add(
+                        "tiene-evento"
+                    );
+
 
 
                     const indicador =
                         document.createElement("span");
 
+
                     indicador.className =
                         "indicador-evento";
+
 
                     indicador.textContent =
                         eventosDelDia.length;
 
-                    elemento.appendChild(indicador);
+
+                    elemento.appendChild(
+                        indicador
+                    );
 
                 }
 
 
-                /*
-                 Click
-                */
+
+                /* =================================================
+                   CLICK
+                   ================================================= */
 
                 elemento.addEventListener(
                     "click",
-                    () => mostrarEventos(fecha)
+                    () =>
+                        mostrarEventos(fecha)
                 );
 
 
-                diasCalendario.appendChild(elemento);
+
+                diasCalendario.appendChild(
+                    elemento
+                );
 
             }
 
 
-            /*
-             Rellenar calendario hasta completar semanas
-            */
+
+            /* =================================================
+               COMPLETAR ÚLTIMA SEMANA
+               ================================================= */
 
             const totalDias =
                 primerDia + numeroDias;
 
+
             const huecosFinales =
-                (7 - (totalDias % 7)) % 7;
+                (
+                    7 -
+                    (totalDias % 7)
+                ) % 7;
+
 
 
             for (
@@ -688,50 +1021,61 @@
                 dia++
             ) {
 
+
                 const elemento =
                     document.createElement("div");
+
 
                 elemento.className =
                     "dia otro-mes";
 
+
                 elemento.textContent =
                     dia;
 
-                diasCalendario.appendChild(elemento);
+
+                diasCalendario.appendChild(
+                    elemento
+                );
 
             }
 
         }
 
 
+
         /* =====================================================
-           MOSTRAR EVENTOS DE UN DÍA
+           MOSTRAR EVENTOS
            ===================================================== */
 
         function mostrarEventos(fecha) {
 
+
+            /* BUSCAR EVENTOS */
+
             const eventosEncontrados =
                 eventos.filter(
-                    evento => evento.fecha === fecha
+                    evento =>
+                        evento.fecha === fecha
                 );
 
 
-            /*
-             Quitar selección anterior
-            */
+
+            /* QUITAR SELECCIÓN */
 
             document
                 .querySelectorAll(".dia")
                 .forEach(dia => {
 
-                    dia.classList.remove("seleccionado");
+                    dia.classList.remove(
+                        "seleccionado"
+                    );
 
                 });
 
 
-            /*
-             Seleccionar día
-            */
+
+            /* SELECCIONAR DÍA */
 
             const diaSeleccionado =
                 document.querySelector(
@@ -748,11 +1092,15 @@
             }
 
 
-            /*
-             Si no hay eventos
-            */
 
-            if (eventosEncontrados.length === 0) {
+            /* =================================================
+               SIN EVENTOS
+               ================================================= */
+
+            if (
+                eventosEncontrados.length === 0
+            ) {
+
 
                 eventosDia.innerHTML = `
 
@@ -762,105 +1110,165 @@
                             📅
                         </div>
 
-                        <h3>No hay eventos este día</h3>
+                        <h3>
+                            No hay eventos este día
+                        </h3>
 
                         <p>
-                            Actualmente no hay ninguna actividad
-                            programada para esta fecha.
+                            Actualmente no hay ninguna
+                            actividad programada para
+                            esta fecha.
                         </p>
 
                     </div>
 
                 `;
+
 
                 return;
 
             }
 
 
-            /*
-             Crear contenido
-            */
+
+            /* =================================================
+               LIMPIAR
+               ================================================= */
 
             eventosDia.innerHTML = "";
 
 
-            eventosEncontrados.forEach(evento => {
 
-                const tarjeta =
-                    document.createElement("article");
+            /* =================================================
+               CREAR TARJETAS
+               ================================================= */
 
-                tarjeta.className =
-                    "tarjeta-evento";
-
-
-                tarjeta.innerHTML = `
-
-                    <div class="evento-fecha">
-
-                        <span>
-                            ${formatearFecha(evento.fecha)}
-                        </span>
-
-                    </div>
+            eventosEncontrados.forEach(
+                evento => {
 
 
-                    <div class="evento-contenido">
-
-                        <span class="evento-tipo">
-                            ${evento.tipo}
-                        </span>
-
-                        <h3>
-                            ${evento.titulo}
-                        </h3>
-
-                        <p class="evento-juego">
-                            🎲 ${evento.juego}
-                        </p>
-
-                        <p>
-                            ${evento.descripcion}
-                        </p>
+                    const tarjeta =
+                        document.createElement(
+                            "article"
+                        );
 
 
-                        <div class="evento-datos">
+                    tarjeta.className =
+                        "tarjeta-evento";
 
-                            <div>
-                                <strong>🕐 Hora</strong>
-                                <span>${evento.hora}</span>
-                            </div>
 
-                            <div>
-                                <strong>📍 Lugar</strong>
-                                <span>${evento.lugar}</span>
-                            </div>
 
-                            <div>
-                                <strong>👥 Plazas</strong>
-                                <span>${evento.plazas}</span>
-                            </div>
+                    tarjeta.innerHTML = `
+
+
+                        <div class="evento-fecha">
+
+                            <span>
+                                ${formatearFecha(
+                                    evento.fecha
+                                )}
+                            </span>
 
                         </div>
 
 
-                        <a
-                            href="../unirse/"
-                            class="boton-evento"
-                        >
-                            QUIERO PARTICIPAR
-                        </a>
 
-                    </div>
-
-                `;
+                        <div class="evento-contenido">
 
 
-                eventosDia.appendChild(tarjeta);
+                            <span class="evento-tipo">
+                                ${evento.tipo}
+                            </span>
 
-            });
+
+                            <h3>
+                                ${evento.titulo}
+                            </h3>
+
+
+                            <p class="evento-juego">
+                                🎲 ${evento.juego}
+                            </p>
+
+
+                            <p>
+                                ${evento.descripcion}
+                            </p>
+
+
+
+                            <div class="evento-datos">
+
+
+                                <div>
+
+                                    <strong>
+                                        🕐 Hora
+                                    </strong>
+
+                                    <span>
+                                        ${evento.hora}
+                                    </span>
+
+                                </div>
+
+
+
+                                <div>
+
+                                    <strong>
+                                        📍 Lugar
+                                    </strong>
+
+                                    <span>
+                                        ${evento.lugar}
+                                    </span>
+
+                                </div>
+
+
+
+                                <div>
+
+                                    <strong>
+                                        👥 Plazas
+                                    </strong>
+
+                                    <span>
+                                        ${evento.plazas}
+                                    </span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <a
+                                href="contacto.html"
+                                class="boton-evento">
+
+                                QUIERO PARTICIPAR
+
+                            </a>
+
+
+                        </div>
+
+                    `;
+
+
+
+                    eventosDia.appendChild(
+                        tarjeta
+                    );
+
+                }
+            );
 
         }
+
 
 
         /* =====================================================
@@ -869,21 +1277,31 @@
 
         function formatearFecha(fecha) {
 
+
             const partes =
                 fecha.split("-");
+
 
             const año =
                 parseInt(partes[0]);
 
+
             const mes =
                 parseInt(partes[1]) - 1;
+
 
             const dia =
                 parseInt(partes[2]);
 
 
+
             const fechaObjeto =
-                new Date(año, mes, dia);
+                new Date(
+                    año,
+                    mes,
+                    dia
+                );
+
 
 
             return fechaObjeto.toLocaleDateString(
@@ -898,84 +1316,97 @@
         }
 
 
+
         /* =====================================================
-           CAMBIAR MES
+           CAMBIAR AL MES ANTERIOR
            ===================================================== */
 
         botonAnterior.addEventListener(
             "click",
             () => {
 
+
                 fechaCalendario.setMonth(
                     fechaCalendario.getMonth() - 1
                 );
 
+
                 mostrarCalendario();
 
-                eventosDia.innerHTML = `
 
-                    <div class="sin-eventos">
-
-                        <div class="sin-eventos-icono">
-                            📅
-                        </div>
-
-                        <h3>Selecciona un día</h3>
-
-                        <p>
-                            Pulsa sobre un día para consultar
-                            los eventos programados.
-                        </p>
-
-                    </div>
-
-                `;
+                mostrarMensajeSeleccion();
 
             }
         );
 
+
+
+        /* =====================================================
+           CAMBIAR AL MES SIGUIENTE
+           ===================================================== */
 
         botonSiguiente.addEventListener(
             "click",
             () => {
 
+
                 fechaCalendario.setMonth(
                     fechaCalendario.getMonth() + 1
                 );
 
+
                 mostrarCalendario();
 
-                eventosDia.innerHTML = `
 
-                    <div class="sin-eventos">
-
-                        <div class="sin-eventos-icono">
-                            📅
-                        </div>
-
-                        <h3>Selecciona un día</h3>
-
-                        <p>
-                            Pulsa sobre un día para consultar
-                            los eventos programados.
-                        </p>
-
-                    </div>
-
-                `;
+                mostrarMensajeSeleccion();
 
             }
         );
 
 
+
         /* =====================================================
-           INICIAR
+           MENSAJE INICIAL
+           ===================================================== */
+
+        function mostrarMensajeSeleccion() {
+
+
+            eventosDia.innerHTML = `
+
+                <div class="sin-eventos">
+
+                    <div class="sin-eventos-icono">
+                        📅
+                    </div>
+
+                    <h3>
+                        Selecciona un día
+                    </h3>
+
+                    <p>
+                        Pulsa sobre un día para consultar
+                        los eventos programados.
+                    </p>
+
+                </div>
+
+            `;
+
+        }
+
+
+
+        /* =====================================================
+           INICIAR CALENDARIO
            ===================================================== */
 
         mostrarCalendario();
 
     </script>
 
+
 </body>
 
 </html>
+
