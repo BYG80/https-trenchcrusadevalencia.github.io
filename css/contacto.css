@@ -1,117 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="es">
 
 <head>
 
-    <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-
-    <!-- =========================================================
-         SEO PRINCIPAL
-         ========================================================= -->
-
-    <title>Contacto | Trench Crusade Valencia | Horta Nord Wargames</title>
-
-    <meta name="description"
-        content="Contacta con Horta Nord Wargames, comunidad de Trench Crusade en Valencia. Pregunta por partidas, eventos, campañas, club y cómo unirte a nuestra comunidad.">
-
-    <meta name="robots"
-        content="index, follow">
-
-    <meta name="author"
-        content="Horta Nord Wargames">
-
-    <meta name="theme-color"
-        content="#111111">
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
 
-    <!-- =========================================================
-         CANONICAL
-         ========================================================= -->
+<!-- =========================================================
+     SEO PRINCIPAL
+     ========================================================= -->
 
-    <link rel="canonical"
-        href="https://sons-of-heroes.es/contacto.html">
+<title>
+    Contacto | Trench Crusade Valencia | Horta Nord Wargames
+</title>
 
+<meta name="description"
+    content="Contacta con Horta Nord Wargames, comunidad de Trench Crusade en Valencia. Pregunta por partidas, eventos, campañas, club y cómo unirte a nuestra comunidad.">
 
-    <!-- =========================================================
-         FAVICON
-         ========================================================= -->
+<meta name="robots"
+    content="index, follow">
 
-    <link rel="icon"
-        href="assets/img/favicon.png">
+<meta name="author"
+    content="Horta Nord Wargames">
 
-
-    <!-- =========================================================
-         OPEN GRAPH
-         ========================================================= -->
-
-    <meta property="og:type"
-        content="website">
-
-    <meta property="og:locale"
-        content="es_ES">
-
-    <meta property="og:title"
-        content="Contacto | Trench Crusade Valencia">
-
-    <meta property="og:description"
-        content="Contacta con Horta Nord Wargames y descubre cómo participar en partidas, eventos, campañas y actividades de Trench Crusade en Valencia.">
-
-    <meta property="og:url"
-        content="https://sons-of-heroes.es/contacto.html">
-
-    <meta property="og:site_name"
-        content="Trench Crusade Valencia">
-
-    <meta property="og:image"
-        content="https://sons-of-heroes.es/assets/img/hero.jpg">
-
-    <meta property="og:image:alt"
-        content="Trench Crusade Valencia - Horta Nord Wargames">
+<meta name="theme-color"
+    content="#111111">
 
 
-    <!-- =========================================================
-         TWITTER / X
-         ========================================================= -->
+<!-- =========================================================
+     CANONICAL
+     ========================================================= -->
 
-    <meta name="twitter:card"
-        content="summary_large_image">
-
-    <meta name="twitter:title"
-        content="Contacto | Trench Crusade Valencia">
-
-    <meta name="twitter:description"
-        content="Contacta con Horta Nord Wargames para conocer partidas, eventos, campañas y actividades de Trench Crusade en Valencia.">
-
-    <meta name="twitter:image"
-        content="https://sons-of-heroes.es/assets/img/hero.jpg">
+<link rel="canonical"
+    href="https://sons-of-heroes.es/contacto.html">
 
 
-    <!-- =========================================================
-         GOOGLE FONTS
-         ========================================================= -->
+<!-- =========================================================
+     FAVICON
+     ========================================================= -->
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="icon"
+    href="assets/img/favicon.png">
 
 
-    <!-- =========================================================
-         CSS
-         ========================================================= -->
+<!-- =========================================================
+     OPEN GRAPH
+     ========================================================= -->
 
-    <link rel="stylesheet"
-        href="css/style.css">
+<meta property="og:type"
+    content="website">
 
-    <link rel="stylesheet"
-        href="css/contacto.css">
+<meta property="og:locale"
+    content="es_ES">
+
+<meta property="og:title"
+    content="Contacto | Trench Crusade Valencia">
+
+<meta property="og:description"
+    content="Contacta con Horta Nord Wargames y descubre cómo participar en partidas, eventos, campañas y actividades de Trench Crusade en Valencia.">
+
+<meta property="og:url"
+    content="https://sons-of-heroes.es/contacto.html">
+
+<meta property="og:site_name"
+    content="Trench Crusade Valencia">
+
+<meta property="og:image"
+    content="https://sons-of-heroes.es/assets/img/hero.jpg">
+
+<meta property="og:image:alt"
+    content="Trench Crusade Valencia - Horta Nord Wargames">
+
+
+<!-- =========================================================
+     TWITTER / X
+     ========================================================= -->
+
+<meta name="twitter:card"
+    content="summary_large_image">
+
+<meta name="twitter:title"
+    content="Contacto | Trench Crusade Valencia">
+
+<meta name="twitter:description"
+    content="Contacta con Horta Nord Wargames para conocer partidas, eventos, campañas y actividades de Trench Crusade en Valencia.">
+
+<meta name="twitter:image"
+    content="https://sons-of-heroes.es/assets/img/hero.jpg">
+
+
+<!-- =========================================================
+     GOOGLE FONTS
+     ========================================================= -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+<!-- =========================================================
+     CSS
+     ========================================================= -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+<link rel="stylesheet"
+    href="css/contacto.css">
+
 
 </head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+
+<div class="logo">
+
+    <a href="index.html"
+       aria-label="Volver a la página de inicio">
+
+        <img
+            src="assets/img/logos.png"
+            alt="Logo de Trench Crusade Valencia"
+            width="60"
+            height="60">
+
+    </a>
+
+    <h1>
+        Trench Crusade Valencia
+    </h1>
+
+</div>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+     ===================================================== -->
+
+<nav aria-label="Navegación principal">
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="el-Juego.html">
+                El Juego
+            </a>
+        </li>
+
+        <li>
+            <a href="club.html">
+                Club
+            </a>
+        </li>
+
+        <li>
+            <a href="eventos.html">
+                Eventos
+            </a>
+        </li>
+
+        <li>
+            <a href="campañas.html">
+                Campañas
+            </a>
+        </li>
+
+        <li>
+            <a href="escenografia.html">
+                Escenografía
+            </a>
+        </li>
+
+        <li>
+            <a href="recursos.html">
+                Recursos
+            </a>
+        </li>
+
+        <li>
+            <a href="contacto.html"
+               class="active"
+               aria-current="page">
+                Contacto
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+</header>
+
+<!-- =========================================================
+     CONTENIDO PRINCIPAL
+     ========================================================= -->
+
+<main>
+
+<!-- =========================================================
+     HERO DE CONTACTO
+     ========================================================= -->
+
+<section class="contact-hero"
+         aria-labelledby="titulo-contacto">
+
+
+<h2 id="titulo-contacto">
+    Contacta con Trench Crusade Valencia
+</h2>
+
+
+<p class="subtitle">
+    Horta Nord Wargames
+</p>
+
+
+<p>
+    ¿Quieres jugar a Trench Crusade, conocer nuestra comunidad,
+    participar en una campaña o saber cuándo organizamos
+    partidas y eventos? Ponte en contacto con nosotros.
+</p>
+
+
+</section>
+
+<!-- =========================================================
+     INFORMACIÓN Y FORMULARIO
+     ========================================================= -->
+
+<section class="contact-container"
+         aria-label="Información de contacto y formulario">
+
+
+<!-- =====================================================
+     INFORMACIÓN
+     ===================================================== -->
+
+<div class="info-section">
+
+    <h2>
+        Hablemos
+    </h2>
+
+
+    <div class="info-item">
+
+        <div class="icon-location"
+             aria-hidden="true">
+        </div>
+
+
+        <div>
+
+            <h3>
+                Valencia
+            </h3>
+
+            <p>
+                Horta Nord Wargames nace con la intención de
+                crear una comunidad de jugadores de Trench Crusade
+                en Valencia.
+            </p>
+
+            <p>
+                El proyecto contempla establecer la sede del club
+                en Rafelbunyol.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-item">
+
+        <div class="icon-email"
+             aria-hidden="true">
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contacto
+            </h3>
+
+            <p>
+                Si quieres conocer el proyecto, participar en
+                partidas, campañas o eventos, puedes ponerte
+                en contacto con nosotros mediante el formulario.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-item">
+
+        <div class="icon-email"
+             aria-hidden="true">
+        </div>
+
+
+        <div>
+
+            <h3>
+                ¿Quieres unirte?
+            </h3>
+
+            <p>
+                Si estás interesado en formar parte de la comunidad,
+                también puedes conocer nuestro proyecto de club
+                y consultar cómo unirte.
+            </p>
+
+            <p>
+
+                <a href="club.html"
+                   class="btn">
+                    Conoce el club
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FORMULARIO
+     ===================================================== -->
+
+<div class="form-section">
+
+    <h2>
+        Envíanos un mensaje
+    </h2>
+
+
+    <p>
+        Utiliza este formulario para ponerte en contacto
+        con Horta Nord Wargames.
+    </p>
+
+
+    <!-- =================================================
+         FORMULARIO
+         ================================================= -->
+
+    <form action="#"
+          method="post">
+
+
+        <div class="row">
+
+
+            <div>
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+            <div>
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+        </div>
+
+
+        <label for="asunto">
+            Asunto
+        </label>
+
+        <input
+            type="text"
+            id="asunto"
+            name="asunto"
+            placeholder="¿En qué podemos ayudarte?"
+            required>
+
+
+        <label for="mensaje">
+            Mensaje
+        </label>
+
+        <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribe aquí tu mensaje..."
+            required></textarea>
+
+
+        <button type="submit">
+            Enviar mensaje
+        </button>
+
+
+    </form>
+
+</div>
+
+
+</section>
+
+<!-- =========================================================
+     CTA CLUB
+     ========================================================= -->
+
+<section class="club-join"
+         aria-labelledby="titulo-unirse">
+
+
+<div class="club-join-content">
+
+
+    <h2 id="titulo-unirse">
+        ¿Quieres formar parte de la comunidad?
+    </h2>
+
+
+    <p>
+        Estamos trabajando en la creación de una comunidad
+        de jugadores de Trench Crusade en Valencia.
+        Si quieres participar en partidas, campañas,
+        eventos o simplemente conocer a otros jugadores,
+        estaremos encantados de conocerte.
+    </p>
+
+
+    <a href="club.html"
+       class="btn">
+
+        Más información sobre el club
+
+    </a>
+
+
+</div>
+
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+
+<p>
+    © 2026 Horta Nord Wargames |
+    Comunidad de Trench Crusade en Valencia
+</p>
+
+
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
