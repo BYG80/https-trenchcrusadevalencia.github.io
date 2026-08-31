@@ -1,3 +1,4 @@
+
 /* =========================================================
    HORTA NORD WARGAMES
    EVENTOS.CSS
@@ -11,28 +12,25 @@
 .hero-eventos {
     position: relative;
 
-    padding: 110px 20px 90px;
+    padding: 150px 20px 100px;
 
     background:
         linear-gradient(
-            rgba(10, 10, 10, 0.82),
-            rgba(10, 10, 10, 0.92)
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.88)
         ),
-        url("../img/eventos-bg.jpg");
+        url("../assets/img/eventos-bg.jpg");
 
     background-size: cover;
     background-position: center;
 
-    border-bottom:
-        1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid #2c2c2c;
 
     text-align: center;
 }
 
 
-/* CONTENIDO REAL DEL HTML */
-
-.eventos-hero-content {
+.hero-eventos .eventos-hero-content {
     max-width: 900px;
 
     margin: 0 auto;
@@ -46,45 +44,41 @@
 
     margin-bottom: 15px;
 
+    color: #bdb7a5;
+
     font-size: 12px;
     font-weight: 700;
 
     letter-spacing: 3px;
-
-    opacity: 0.65;
 }
 
 
 .hero-eventos h2 {
-    margin: 0 0 20px;
+    margin: 0 0 25px;
 
-    font-size:
-        clamp(45px, 7vw, 80px);
+    font-family: Cinzel, serif;
 
-    font-weight: 900;
+    color: #d9b96d;
+
+    font-size: clamp(45px, 7vw, 70px);
+
+    font-weight: 800;
 
     text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    text-align: center;
 }
 
 
 .hero-eventos p {
-    max-width: 650px;
+    max-width: 700px;
 
     margin: 0 auto;
 
-    font-size: 19px;
+    color: #ffffff;
 
-    line-height: 1.7;
+    font-size: 20px;
 
-    opacity: 0.78;
-
-    text-align: center;
+    line-height: 1.8;
 }
-
 
 
 /* =========================================================
@@ -92,27 +86,25 @@
    ========================================================= */
 
 .aviso-eventos {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
     max-width: 1100px;
 
     margin: 60px auto;
 
     padding: 30px;
 
-    display: flex;
+    background: #181818;
 
-    align-items: center;
-    justify-content: center;
+    border: 1px solid #2c2c2c;
 
-    gap: 25px;
+    border-left: 4px solid #7c1111;
 
-    background:
-        rgba(255,255,255,0.035);
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-
-    border-left:
-        4px solid currentColor;
+    border-radius: 8px;
 
     text-align: center;
 }
@@ -129,46 +121,41 @@
     align-items: center;
     justify-content: center;
 
+    background: #0d0d0d;
+
+    border: 1px solid #2c2c2c;
+
+    border-radius: 8px;
+
     font-size: 30px;
-
-    background:
-        rgba(255,255,255,0.05);
-
-    border:
-        1px solid rgba(255,255,255,0.08);
 }
 
 
 .aviso-contenido {
     flex: 1;
-
-    text-align: center;
 }
 
 
 .aviso-contenido h2 {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
+
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
 
     font-size: 23px;
 
     text-transform: uppercase;
-
-    text-align: center;
 }
 
 
 .aviso-contenido p {
-    max-width: 750px;
+    margin: 7px 0;
 
-    margin: 8px auto;
+    color: #bdb7a5;
 
     line-height: 1.6;
-
-    opacity: 0.72;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -176,9 +163,7 @@
    ========================================================= */
 
 .titulo-seccion {
-    max-width: 800px;
-
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
 
     text-align: center;
 }
@@ -189,44 +174,37 @@
 
     margin-bottom: 10px;
 
-    font-size: 12px;
+    color: #bdb7a5;
 
+    font-size: 12px;
     font-weight: 700;
 
     letter-spacing: 3px;
-
-    opacity: 0.55;
-
-    text-align: center;
 }
 
 
 .titulo-seccion h2 {
     margin: 0 0 15px;
 
-    font-size:
-        clamp(30px, 5vw, 48px);
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
+    font-size: clamp(30px, 5vw, 45px);
 
     text-transform: uppercase;
-
-    letter-spacing: 1px;
-
-    text-align: center;
 }
 
 
 .titulo-seccion p {
-    max-width: 650px;
+    max-width: 700px;
 
     margin: 0 auto;
 
-    line-height: 1.6;
+    color: #bdb7a5;
 
-    opacity: 0.65;
-
-    text-align: center;
+    line-height: 1.7;
 }
-
 
 
 /* =========================================================
@@ -235,10 +213,7 @@
 
 .seccion-calendario {
     padding: 80px 20px;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -250,18 +225,14 @@
 
     margin: 0 auto;
 
-    background:
-        rgba(255,255,255,0.025);
+    background: #181818;
 
-    border:
-        1px solid rgba(255,255,255,0.09);
+    border: 1px solid #2c2c2c;
 
-    box-shadow:
-        0 15px 50px rgba(0,0,0,0.25);
+    border-radius: 10px;
 
-    text-align: left;
+    overflow: hidden;
 }
-
 
 
 /* =========================================================
@@ -276,26 +247,28 @@
 
     padding: 20px 25px;
 
-    background:
-        rgba(255,255,255,0.035);
+    background: #181818;
 
-    border-bottom:
-        1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid #2c2c2c;
 }
 
 
 .calendario-header h3 {
     margin: 0;
 
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
     font-size: 22px;
 
     text-transform: uppercase;
-
-    letter-spacing: 1px;
-
-    text-align: center;
 }
 
+
+/* =========================================================
+   BOTONES DEL CALENDARIO
+   ========================================================= */
 
 .boton-calendario {
     width: 42px;
@@ -308,29 +281,27 @@
 
     padding: 0;
 
-    border:
-        1px solid rgba(255,255,255,0.15);
+    background: #7c1111;
 
-    background:
-        rgba(255,255,255,0.04);
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 6px;
 
     font-size: 28px;
 
     cursor: pointer;
 
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+    transition: 0.3s;
 }
 
 
 .boton-calendario:hover {
-    background:
-        rgba(255,255,255,0.1);
+    background: #b32020;
 
-    transform: scale(1.05);
+    transform: none;
 }
-
 
 
 /* =========================================================
@@ -343,25 +314,24 @@
     grid-template-columns:
         repeat(7, 1fr);
 
-    border-bottom:
-        1px solid rgba(255,255,255,0.08);
+    background: #0d0d0d;
+
+    border-bottom: 1px solid #2c2c2c;
 }
 
 
 .dias-semana div {
     padding: 15px 5px;
 
+    color: #bdb7a5;
+
     text-align: center;
 
     font-size: 11px;
-
     font-weight: 700;
 
     letter-spacing: 1px;
-
-    opacity: 0.5;
 }
-
 
 
 /* =========================================================
@@ -373,8 +343,9 @@
 
     grid-template-columns:
         repeat(7, 1fr);
-}
 
+    background: #181818;
+}
 
 
 /* =========================================================
@@ -388,24 +359,22 @@
 
     padding: 12px;
 
-    border-right:
-        1px solid rgba(255,255,255,0.06);
+    background: #181818;
 
-    border-bottom:
-        1px solid rgba(255,255,255,0.06);
+    border-right: 1px solid #2c2c2c;
+
+    border-bottom: 1px solid #2c2c2c;
 
     cursor: pointer;
 
-    transition:
-        background 0.2s ease;
-
     text-align: left;
+
+    transition: 0.3s;
 }
 
 
 .dia:hover {
-    background:
-        rgba(255,255,255,0.05);
+    background: #222222;
 }
 
 
@@ -414,17 +383,17 @@
 }
 
 
-
 /* =========================================================
-   NÚMERO DEL DÍA
+   NÚMERO
    ========================================================= */
 
 .numero-dia {
+    color: #ffffff;
+
     font-size: 15px;
 
     font-weight: 600;
 }
-
 
 
 /* =========================================================
@@ -432,11 +401,12 @@
    ========================================================= */
 
 .dia.otro-mes {
-    opacity: 0.18;
+    color: #555555;
+
+    opacity: 0.35;
 
     cursor: default;
 }
-
 
 
 /* =========================================================
@@ -444,30 +414,28 @@
    ========================================================= */
 
 .dia.tiene-evento {
-    background:
-        rgba(179,38,30,0.08);
+    background: #201515;
 }
 
 
 .dia.tiene-evento .numero-dia {
+    color: #d9b96d;
+
     font-weight: 900;
 }
 
 
-
 /* =========================================================
-   INDICADOR ROJO DE EVENTO
+   INDICADOR EVENTO
    ========================================================= */
 
 .indicador-evento {
     position: absolute;
 
     right: 10px;
-
     bottom: 10px;
 
     min-width: 25px;
-
     height: 25px;
 
     display: flex;
@@ -477,22 +445,21 @@
 
     padding: 0 6px;
 
-    border-radius: 50%;
-
-    background: #b3261e;
+    background: #7c1111;
 
     color: #ffffff;
+
+    border-radius: 50%;
 
     font-size: 11px;
 
     font-weight: 900;
 
     box-shadow:
-        0 0 10px rgba(179,38,30,0.45);
+        0 0 8px rgba(124, 17, 17, 0.6);
 
     z-index: 2;
 }
-
 
 
 /* =========================================================
@@ -500,13 +467,16 @@
    ========================================================= */
 
 .dia.seleccionado {
-    background:
-        rgba(179,38,30,0.16);
+    background: #291515;
 
     box-shadow:
-        inset 0 0 0 2px #b3261e;
+        inset 0 0 0 2px #d9b96d;
 }
 
+
+.dia.seleccionado .indicador-evento {
+    background: #b32020;
+}
 
 
 /* =========================================================
@@ -522,7 +492,6 @@
 }
 
 
-
 /* =========================================================
    SIN EVENTOS
    ========================================================= */
@@ -530,13 +499,13 @@
 .sin-eventos {
     padding: 45px 25px;
 
+    background: #181818;
+
+    border: 1px solid #2c2c2c;
+
+    border-radius: 8px;
+
     text-align: center;
-
-    background:
-        rgba(255,255,255,0.025);
-
-    border:
-        1px solid rgba(255,255,255,0.08);
 }
 
 
@@ -544,19 +513,19 @@
     margin-bottom: 15px;
 
     font-size: 35px;
-
-    opacity: 0.6;
 }
 
 
 .sin-eventos h3 {
     margin: 0 0 10px;
 
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
     font-size: 20px;
 
     text-transform: uppercase;
-
-    text-align: center;
 }
 
 
@@ -565,13 +534,10 @@
 
     margin: 0 auto;
 
-    opacity: 0.55;
+    color: #bdb7a5;
 
     line-height: 1.6;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -581,22 +547,18 @@
 .tarjeta-evento {
     display: grid;
 
-    grid-template-columns:
-        190px 1fr;
+    grid-template-columns: 190px 1fr;
 
     margin-bottom: 20px;
 
-    background:
-        rgba(255,255,255,0.035);
+    background: #181818;
 
-    border:
-        1px solid rgba(255,255,255,0.09);
+    border: 1px solid #2c2c2c;
+
+    border-radius: 10px;
 
     overflow: hidden;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -611,17 +573,19 @@
 
     padding: 25px;
 
-    background:
-        rgba(255,255,255,0.045);
+    background: #0d0d0d;
 
-    border-right:
-        1px solid rgba(255,255,255,0.08);
+    border-right: 1px solid #2c2c2c;
 
     text-align: center;
 }
 
 
 .evento-fecha span {
+    color: #d9b96d;
+
+    font-family: Cinzel, serif;
+
     font-size: 14px;
 
     font-weight: 800;
@@ -629,10 +593,7 @@
     text-transform: uppercase;
 
     line-height: 1.5;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -649,12 +610,15 @@
 .evento-tipo {
     display: inline-block;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
     padding: 5px 10px;
 
-    border:
-        1px solid rgba(255,255,255,0.15);
+    background: #7c1111;
+
+    color: #ffffff;
+
+    border-radius: 4px;
 
     font-size: 10px;
 
@@ -663,46 +627,41 @@
     text-transform: uppercase;
 
     letter-spacing: 1px;
-
-    opacity: 0.7;
 }
 
 
 .evento-contenido h3 {
     margin: 0 0 10px;
 
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
     font-size: 28px;
 
     text-transform: uppercase;
-
-    text-align: center;
 }
 
 
 .evento-juego {
     margin: 0 0 15px;
 
+    color: #ffffff;
+
     font-weight: 700;
-
-    opacity: 0.75;
-
-    text-align: center;
 }
 
 
 .evento-contenido > p:not(.evento-juego) {
     max-width: 700px;
 
-    margin:
-        0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #bdb7a5;
 
     line-height: 1.65;
-
-    opacity: 0.65;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -721,8 +680,7 @@
 
     padding-top: 20px;
 
-    border-top:
-        1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid #2c2c2c;
 
     text-align: center;
 }
@@ -736,32 +694,27 @@
     align-items: center;
 
     gap: 5px;
-
-    text-align: center;
 }
 
 
 .evento-datos strong {
+    color: #bdb7a5;
+
     font-size: 10px;
 
     text-transform: uppercase;
 
     letter-spacing: 1px;
-
-    opacity: 0.45;
-
-    text-align: center;
 }
 
 
 .evento-datos span {
+    color: #ffffff;
+
     font-size: 14px;
 
     font-weight: 600;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -773,13 +726,13 @@
 
     margin-top: 25px;
 
-    padding: 13px 22px;
+    padding: 18px 35px;
 
-    border:
-        1px solid rgba(255,255,255,0.2);
+    background: #7c1111;
 
-    background:
-        rgba(255,255,255,0.06);
+    color: #ffffff;
+
+    border-radius: 6px;
 
     text-decoration: none;
 
@@ -789,19 +742,15 @@
 
     letter-spacing: 1px;
 
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+    transition: 0.3s;
 }
 
 
 .boton-evento:hover {
-    background:
-        rgba(255,255,255,0.12);
+    background: #b32020;
 
-    transform: translateY(-2px);
+    transform: none;
 }
-
 
 
 /* =========================================================
@@ -811,16 +760,11 @@
 .tipos-eventos {
     padding: 80px 20px;
 
-    background:
-        rgba(255,255,255,0.018);
+    background: #0d0d0d;
 
-    border-top:
-        1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid #2c2c2c;
 
-    border-bottom:
-        1px solid rgba(255,255,255,0.06);
-
-    text-align: center;
+    border-bottom: 1px solid #2c2c2c;
 }
 
 
@@ -830,7 +774,7 @@
     grid-template-columns:
         repeat(4, 1fr);
 
-    gap: 20px;
+    gap: 30px;
 
     max-width: 1200px;
 
@@ -841,25 +785,22 @@
 .tipo-evento {
     padding: 30px;
 
-    background:
-        rgba(255,255,255,0.025);
+    background: #181818;
 
-    border:
-        1px solid rgba(255,255,255,0.07);
+    border: 1px solid #2c2c2c;
 
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+    border-radius: 10px;
 
     text-align: center;
+
+    transition: 0.3s;
 }
 
 
 .tipo-evento:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 
-    background:
-        rgba(255,255,255,0.045);
+    background: #181818;
 }
 
 
@@ -867,19 +808,19 @@
     margin-bottom: 20px;
 
     font-size: 35px;
-
-    text-align: center;
 }
 
 
 .tipo-evento h3 {
     margin: 0 0 12px;
 
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
     font-size: 18px;
 
     text-transform: uppercase;
-
-    text-align: center;
 }
 
 
@@ -888,15 +829,12 @@
 
     margin: 0 auto;
 
+    color: #bdb7a5;
+
     line-height: 1.6;
 
     font-size: 14px;
-
-    opacity: 0.6;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -905,8 +843,6 @@
 
 .cta-eventos {
     padding: 80px 20px;
-
-    text-align: center;
 }
 
 
@@ -918,26 +854,24 @@
     display: flex;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     gap: 40px;
 
     padding: 45px;
 
-    background:
-        rgba(255,255,255,0.035);
+    background: #181818;
 
-    border:
-        1px solid rgba(255,255,255,0.08);
+    border: 1px solid #2c2c2c;
+
+    border-radius: 10px;
 
     text-align: center;
 }
 
 
-.cta-eventos .cta-contenido > div {
+.cta-eventos .cta-contenido > div:first-child {
     flex: 1;
-
-    text-align: center;
 }
 
 
@@ -946,26 +880,26 @@
 
     margin-bottom: 10px;
 
+    color: #bdb7a5;
+
     font-size: 11px;
 
     font-weight: 800;
 
     letter-spacing: 2px;
-
-    opacity: 0.5;
-
-    text-align: center;
 }
 
 
 .cta-eventos h2 {
     margin: 0 0 10px;
 
+    font-family: Cinzel, serif;
+
+    color: #d9b96d;
+
     font-size: 28px;
 
     text-transform: uppercase;
-
-    text-align: center;
 }
 
 
@@ -974,13 +908,10 @@
 
     margin: 0 auto;
 
+    color: #bdb7a5;
+
     line-height: 1.6;
-
-    opacity: 0.65;
-
-    text-align: center;
 }
-
 
 
 /* =========================================================
@@ -992,13 +923,13 @@
 
     display: inline-block;
 
-    padding: 15px 25px;
+    padding: 18px 35px;
 
-    background:
-        rgba(255,255,255,0.08);
+    background: #7c1111;
 
-    border:
-        1px solid rgba(255,255,255,0.2);
+    color: #ffffff;
+
+    border-radius: 6px;
 
     text-decoration: none;
 
@@ -1008,23 +939,19 @@
 
     letter-spacing: 1.5px;
 
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+    transition: 0.3s;
 }
 
 
 .boton-principal:hover {
-    background:
-        rgba(255,255,255,0.14);
+    background: #b32020;
 
-    transform: translateY(-2px);
+    transform: none;
 }
 
 
-
 /* =========================================================
-   RESPONSIVE - TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -1043,20 +970,19 @@
 }
 
 
-
 /* =========================================================
-   RESPONSIVE - MÓVIL
+   MÓVIL
    ========================================================= */
 
 @media (max-width: 650px) {
 
     .hero-eventos {
-        padding: 80px 20px 60px;
+        padding: 120px 20px 70px;
     }
 
 
     .hero-eventos p {
-        font-size: 16px;
+        font-size: 17px;
     }
 
 
@@ -1065,16 +991,10 @@
 
         align-items: center;
 
+        margin: 40px 20px;
+
         padding: 25px;
 
-        margin-left: 20px;
-        margin-right: 20px;
-
-        text-align: center;
-    }
-
-
-    .aviso-contenido {
         text-align: center;
     }
 
@@ -1113,8 +1033,6 @@
         min-height: 65px;
 
         padding: 8px;
-
-        text-align: left;
     }
 
 
@@ -1125,11 +1043,9 @@
 
     .indicador-evento {
         right: 5px;
-
         bottom: 5px;
 
         min-width: 18px;
-
         height: 18px;
 
         font-size: 9px;
@@ -1138,8 +1054,6 @@
 
     .tarjeta-evento {
         display: block;
-
-        text-align: center;
     }
 
 
@@ -1148,26 +1062,17 @@
 
         border-right: none;
 
-        border-bottom:
-            1px solid rgba(255,255,255,0.08);
-
-        justify-content: center;
-
-        text-align: center;
+        border-bottom: 1px solid #2c2c2c;
     }
 
 
     .evento-contenido {
         padding: 22px;
-
-        text-align: center;
     }
 
 
     .evento-contenido h3 {
         font-size: 22px;
-
-        text-align: center;
     }
 
 
@@ -1176,13 +1081,6 @@
             1fr;
 
         gap: 12px;
-
-        text-align: center;
-    }
-
-
-    .evento-datos div {
-        align-items: center;
     }
 
 
@@ -1197,11 +1095,6 @@
     }
 
 
-    .tipo-evento {
-        text-align: center;
-    }
-
-
     .cta-eventos {
         padding: 60px 20px;
     }
@@ -1213,8 +1106,6 @@
         align-items: center;
 
         padding: 30px;
-
-        text-align: center;
     }
 
 
@@ -1222,15 +1113,7 @@
         font-size: 23px;
     }
 
-
-    .cta-eventos p {
-        margin-left: auto;
-
-        margin-right: auto;
-    }
-
 }
-
 
 
 /* =========================================================
@@ -1243,8 +1126,6 @@
         min-height: 55px;
 
         padding: 6px;
-
-        text-align: left;
     }
 
 
@@ -1263,4 +1144,5 @@
     }
 
 }
+
 
