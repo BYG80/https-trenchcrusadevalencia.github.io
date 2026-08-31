@@ -81,7 +81,10 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover,
+nav a:hover {
+    color: #d9b96d;
+}
+
 nav a.active {
     color: #d9b96d;
 }
@@ -212,7 +215,7 @@ section > h2 {
 
 
 /* =========================================================
-   SECCIONES ABOUT
+   SECCIONES DE INFORMACIÓN
    ========================================================= */
 
 .about {
@@ -258,7 +261,7 @@ section > h2 {
 
 
 /* =========================================================
-   TARJETAS
+   TARJETAS PRINCIPALES
    ========================================================= */
 
 .cards {
@@ -280,7 +283,7 @@ section > h2 {
 
 
 /* =========================================================
-   TÍTULO DE LAS TARJETAS
+   TÍTULO DE LA SECCIÓN DE TARJETAS
    ========================================================= */
 
 .cards > h2 {
@@ -300,7 +303,7 @@ section > h2 {
 
 
 /* =========================================================
-   TARJETAS INDIVIDUALES
+   TARJETAS
    ========================================================= */
 
 .cards article {
@@ -349,7 +352,24 @@ section > h2 {
 
 
 /* =========================================================
-   BLOQUES NEWS
+   ENLACES DENTRO DE LAS TARJETAS
+   ========================================================= */
+
+.cards article h3 a {
+    color: #d9b96d;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.cards article h3 a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   NEWS / BLOQUES DEL INDEX
    ========================================================= */
 
 .news {
@@ -371,20 +391,30 @@ section > h2 {
     text-align: center;
 }
 
+
+/* =========================================================
+   GRID DE BLOQUES DEL INDEX
+   ========================================================= */
+
 .news-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+        repeat(4, minmax(0, 1fr));
 
     gap: 30px;
 
-    max-width: 1150px;
+    max-width: 1250px;
 
     margin: 0 auto;
 
     text-align: center;
 }
+
+
+/* =========================================================
+   TARJETAS NEWS
+   ========================================================= */
 
 .news-grid article {
     background: #181818;
@@ -416,6 +446,11 @@ section > h2 {
     border-color: #7c1111;
 }
 
+
+/* =========================================================
+   TÍTULOS NEWS
+   ========================================================= */
+
 .news-grid article h3 {
     font-family: Cinzel, serif;
 
@@ -429,8 +464,32 @@ section > h2 {
     text-align: center;
 }
 
+
+/* =========================================================
+   ENLACES DE LOS TÍTULOS NEWS
+   ========================================================= */
+
+.news-grid article h3 a {
+    color: #d9b96d;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.news-grid article h3 a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TEXTO NEWS
+   ========================================================= */
+
 .news-grid article p {
     max-width: 500px;
+
+    margin: 0 auto;
 
     color: #c4c0b5;
 
@@ -604,7 +663,10 @@ section > h2 {
     text-align: center;
 }
 
-.game-container h2,
+.game-container h2 {
+    text-align: center;
+}
+
 .game-container p {
     text-align: center;
 }
