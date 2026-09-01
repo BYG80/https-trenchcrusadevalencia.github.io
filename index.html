@@ -8,18 +8,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trench Crusade Valencia | Club, Partidas y Eventos de Wargames</title>
+<title>Trench Crusade Valencia | Sons of Heroes - Wargames</title>
 
 <meta name="description"
-    content="Sons of Heroes es un club de Trench Crusade en Valencia. Organizamos partidas, campañas narrativas, ligas, eventos y actividades para jugadores de wargames de la Comunidad Valenciana.">
+    content="Sons of Heroes es una comunidad de Trench Crusade y wargames en Valencia, con sede prevista en Rafelbunyol. Partidas, campañas, eventos y escenografía.">
 
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large">
 
 <meta name="author" content="Sons of Heroes">
 
+<meta name="theme-color" content="#111111">
+
 <link rel="canonical" href="https://sons-of-heroes.es/">
 
-<link rel="icon" href="assets/img/favicon.png">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
 
 
 <!-- =========================================================
@@ -28,17 +30,22 @@
 
 <meta property="og:type" content="website">
 
+<meta property="og:site_name" content="Sons of Heroes">
+
 <meta property="og:title"
     content="Trench Crusade Valencia | Sons of Heroes">
 
 <meta property="og:description"
-    content="Club de Trench Crusade en Valencia. Partidas, campañas, ligas, eventos y escenografía para jugadores de la Comunidad Valenciana.">
+    content="Comunidad de Trench Crusade y wargames en Valencia. Partidas, campañas narrativas, eventos y escenografía.">
 
 <meta property="og:url"
     content="https://sons-of-heroes.es/">
 
 <meta property="og:image"
     content="https://sons-of-heroes.es/assets/img/logos.png">
+
+<meta property="og:image:alt"
+    content="Sons of Heroes - Trench Crusade Valencia">
 
 <meta property="og:locale" content="es_ES">
 
@@ -53,10 +60,13 @@
     content="Trench Crusade Valencia | Sons of Heroes">
 
 <meta name="twitter:description"
-    content="Club de Trench Crusade en Valencia. Partidas, campañas, ligas y eventos de wargames.">
+    content="Comunidad de Trench Crusade y wargames en Valencia. Partidas, campañas, eventos y escenografía.">
 
 <meta name="twitter:image"
     content="https://sons-of-heroes.es/assets/img/logos.png">
+
+<meta name="twitter:image:alt"
+    content="Sons of Heroes - Trench Crusade Valencia">
 
 
 <!-- =========================================================
@@ -67,7 +77,8 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+<link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
 
@@ -85,16 +96,51 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Sons of Heroes",
-    "url": "https://sons-of-heroes.es/",
-    "logo": "https://sons-of-heroes.es/assets/img/logos.png",
-    "description": "Club de Trench Crusade y wargames en Valencia.",
-    "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Comunidad Valenciana"
-    },
-    "sameAs": []
+    "@graph": [
+
+        {
+            "@type": "Organization",
+            "@id": "https://sons-of-heroes.es/#organization",
+            "name": "Sons of Heroes",
+            "url": "https://sons-of-heroes.es/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sons-of-heroes.es/assets/img/logos.png"
+            },
+            "description": "Comunidad de Trench Crusade y wargames en Valencia, Comunidad Valenciana.",
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Valencia"
+                },
+                {
+                    "@type": "City",
+                    "name": "Rafelbunyol"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Horta Nord"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Comunidad Valenciana"
+                }
+            ]
+        },
+
+        {
+            "@type": "WebSite",
+            "@id": "https://sons-of-heroes.es/#website",
+            "url": "https://sons-of-heroes.es/",
+            "name": "Sons of Heroes",
+            "description": "Trench Crusade y wargames en Valencia.",
+            "publisher": {
+                "@id": "https://sons-of-heroes.es/#organization"
+            },
+            "inLanguage": "es-ES"
+        }
+
+    ]
 }
 </script>
 
@@ -106,7 +152,8 @@
 
 <div class="logo">
 
-    <a href="index.html" aria-label="Sons of Heroes - Trench Crusade Valencia">
+    <a href="index.html"
+        aria-label="Sons of Heroes - Trench Crusade Valencia">
 
         <img
             src="assets/img/logos.png"
@@ -124,41 +171,51 @@
     <ul>
 
         <li>
-            <a href="index.html">Inicio</a>
+            <a href="index.html" aria-current="page">
+                Inicio
+            </a>
         </li>
 
         <li>
-            <a href="el-Juego.html">El Juego</a>
+            <a href="el-Juego.html">
+                El Juego
+            </a>
         </li>
 
         <li>
-            <a href="club.html">Club</a>
+            <a href="club.html">
+                Club
+            </a>
         </li>
 
         <li>
-            <a href="eventos.html">Eventos</a>
-        </li>
-
-        <!--
-        <li>
-            <a href="#">Liga</a>
-        </li>
-        -->
-
-        <li>
-            <a href="campañas.html">Campañas</a>
+            <a href="eventos.html">
+                Eventos
+            </a>
         </li>
 
         <li>
-            <a href="escenografia.html">Escenografía</a>
+            <a href="campañas.html">
+                Campañas
+            </a>
         </li>
 
         <li>
-            <a href="recursos.html">Recursos</a>
+            <a href="escenografia.html">
+                Escenografía
+            </a>
         </li>
 
         <li>
-            <a href="contacto.html">Contacto</a>
+            <a href="recursos.html">
+                Recursos
+            </a>
+        </li>
+
+        <li>
+            <a href="contacto.html">
+                Contacto
+            </a>
         </li>
 
     </ul>
@@ -180,10 +237,10 @@
     </h2>
 
     <p>
-        Bienvenido a <strong>Sons of Heroes</strong>, un club dedicado a
-        <strong>Trench Crusade en Valencia</strong>. Organizamos partidas,
-        campañas narrativas, ligas, eventos y encuentros para jugadores
-        de todos los niveles en la Comunidad Valenciana.
+        Bienvenido a <strong>Sons of Heroes</strong>, una comunidad
+        dedicada a <strong>Trench Crusade en Valencia</strong>.
+        Organizamos partidas, campañas narrativas, eventos y
+        actividades para jugadores de todos los niveles.
     </p>
 
     <div class="hero-buttons">
@@ -208,22 +265,33 @@
 
 <div class="container">
 
-    <h2>Trench Crusade en Valencia</h2>
+    <h2>
+        Trench Crusade en Valencia
+    </h2>
 
     <p>
-        <strong>Sons of Heroes</strong> nace con el objetivo de reunir a
-        jugadores de <strong>Trench Crusade</strong> y aficionados a los
-        wargames en Valencia y la Comunidad Valenciana. Queremos crear un
-        espacio donde disfrutar del juego, conocer nuevos jugadores y
-        desarrollar campañas y partidas con una fuerte ambientación
-        narrativa.
+        <strong>Sons of Heroes</strong> nace para reunir a jugadores
+        de <strong>Trench Crusade</strong> y aficionados a los
+        <strong>wargames en Valencia</strong> y la Comunidad Valenciana.
+        Nuestro objetivo es crear una comunidad donde disfrutar de
+        partidas, conocer nuevos jugadores y desarrollar campañas
+        narrativas ambientadas en el oscuro universo de Trench Crusade.
+    </p>
+
+    <p>
+        El proyecto está orientado especialmente a jugadores de
+        <strong>Valencia, Horta Nord y Rafelbunyol</strong>, facilitando
+        el encuentro entre aficionados al juego de miniaturas,
+        el modelismo, la pintura y la escenografía.
     </p>
 
     <p>
         Tanto si estás descubriendo Trench Crusade como si ya tienes
-        experiencia sobre la mesa de juego, aquí encontrarás partidas,
-        campañas, eventos, ligas y recursos para disfrutar del universo
-        del juego.
+        experiencia sobre la mesa de juego, puedes conocer nuestras
+        <a href="eventos.html">partidas y eventos</a>,
+        descubrir nuestras
+        <a href="campañas.html">campañas narrativas</a> o consultar
+        los <a href="recursos.html">recursos para jugadores</a>.
     </p>
 
 </div>
@@ -236,25 +304,37 @@
 
 <div class="container">
 
-    <h2>¿Qué es Trench Crusade?</h2>
+    <h2>
+        ¿Qué es Trench Crusade?
+    </h2>
 
     <p>
-        <strong>Trench Crusade</strong> es un juego de miniaturas de
-        fantasía oscura ambientado en una Primera Guerra Mundial
-        alternativa, donde la humanidad combate contra fuerzas
-        demoníacas en una guerra santa interminable.
+        <strong>Trench Crusade</strong> es un juego de miniaturas
+        de fantasía oscura ambientado en una versión alternativa
+        de la Primera Guerra Mundial, donde la humanidad lucha
+        contra fuerzas sobrenaturales y demoníacas.
     </p>
 
     <p>
-        El juego combina miniaturas, estrategia, escenografía y una
-        ambientación oscura y narrativa que permite desarrollar
-        partidas y campañas llenas de historias propias.
+        El juego combina estrategia, miniaturas, escenografía y
+        una ambientación narrativa que permite desarrollar
+        partidas llenas de historias propias y campañas en las
+        que las decisiones de los jugadores pueden marcar el
+        desarrollo de la guerra.
     </p>
 
     <p>
-        En Sons of Heroes queremos llevar esta experiencia a las mesas
-        de juego de <strong>Valencia</strong>, creando una comunidad
-        activa de jugadores de Trench Crusade.
+        En <strong>Sons of Heroes</strong> queremos disfrutar de
+        esta experiencia en las mesas de juego de
+        <strong>Valencia</strong>, creando una comunidad activa
+        de jugadores de Trench Crusade y aficionados a los
+        wargames.
+    </p>
+
+    <p>
+        Si quieres conocer mejor el juego, puedes visitar nuestra
+        sección dedicada a
+        <a href="el-Juego.html">Trench Crusade y sus reglas</a>.
     </p>
 
 </div>
@@ -274,8 +354,9 @@
     </h3>
 
     <p>
-        Encuentros y partidas de Trench Crusade para disfrutar del juego
-        y conocer a otros jugadores de Valencia.
+        Partidas y encuentros de Trench Crusade para disfrutar
+        del juego y conocer a otros jugadores de Valencia y
+        la Comunidad Valenciana.
     </p>
 
 </article>
@@ -284,12 +365,13 @@
 <article>
 
     <h3>
-        Liga Valenciana
+        Liga y Competición
     </h3>
 
     <p>
-        Temporadas, clasificaciones y partidas competitivas para quienes
-        quieran llevar sus bandas al campo de batalla.
+        Partidas competitivas, temporadas y actividades para
+        quienes quieran poner sus bandas a prueba sobre el
+        campo de batalla.
     </p>
 
 </article>
@@ -304,8 +386,9 @@
     </h3>
 
     <p>
-        Campañas de Trench Crusade donde cada partida forma parte de una
-        historia y las decisiones de los jugadores tienen consecuencias.
+        Campañas de Trench Crusade donde cada partida forma
+        parte de una historia y las decisiones de los jugadores
+        pueden tener consecuencias.
     </p>
 
 </article>
@@ -320,11 +403,43 @@
     </h3>
 
     <p>
-        Mesas de juego, escenografía e impresión 3D para crear campos de
-        batalla ambientados en el universo de Trench Crusade.
+        Mesas de juego, escenografía e impresión 3D para crear
+        campos de batalla inmersivos inspirados en el universo
+        de Trench Crusade.
     </p>
 
 </article>
+
+</section>
+
+<!-- ========================================================= CLUB / SEO LOCAL ========================================================= -->
+
+<section class="about">
+
+<div class="container">
+
+    <h2>
+        Club de Trench Crusade en Valencia
+    </h2>
+
+    <p>
+        Estamos formando una comunidad de jugadores de
+        <strong>Trench Crusade en Valencia</strong>, con especial
+        atención a la zona de <strong>Rafelbunyol y Horta Nord</strong>.
+        La idea es disponer de un espacio donde organizar partidas,
+        campañas, torneos y actividades relacionadas con los
+        wargames.
+    </p>
+
+    <p>
+        Si estás buscando
+        <strong>dónde jugar a Trench Crusade en Valencia</strong>
+        o quieres conocer a otros jugadores de la zona, puedes
+        conocer el proyecto y apuntarte desde nuestra
+        <a href="club.html">página del club</a>.
+    </p>
+
+</div>
 
 </section>
 
@@ -332,7 +447,9 @@
 
 <section class="news">
 
-<h2>Últimas noticias</h2>
+<h2>
+    Noticias de Sons of Heroes
+</h2>
 
 <div class="news-grid">
 
@@ -340,13 +457,18 @@
     <article>
 
         <h3>
-            Próxima jornada
+            Próximas partidas
         </h3>
 
         <p>
-            Muy pronto anunciaremos nuestra primera partida abierta de
-            Trench Crusade en Valencia.
+            Estamos preparando nuevas actividades y partidas
+            abiertas de Trench Crusade para jugadores de
+            Valencia y alrededores.
         </p>
+
+        <a href="eventos.html">
+            Ver eventos
+        </a>
 
     </article>
 
@@ -358,9 +480,14 @@
         </h3>
 
         <p>
-            Estamos preparando una colección de escenografía para crear
-            mesas de juego completas para nuestras partidas y campañas.
+            Seguimos trabajando en una colección de escenografía
+            para crear mesas de juego completas y ambientadas
+            para nuestras partidas y campañas.
         </p>
+
+        <a href="escenografia.html">
+            Ver escenografía
+        </a>
 
     </article>
 
@@ -368,13 +495,18 @@
     <article>
 
         <h3>
-            Únete al club
+            Únete a la comunidad
         </h3>
 
         <p>
-            Buscamos nuevos jugadores interesados en Trench Crusade y los
-            wargames. No importa si estás empezando o ya tienes experiencia.
+            Buscamos jugadores interesados en Trench Crusade y
+            los wargames. No importa si estás empezando o ya
+            tienes experiencia.
         </p>
+
+        <a href="contacto.html">
+            Contactar
+        </a>
 
     </article>
 
@@ -387,11 +519,13 @@
 
 <section class="gallery">
 
-<h2>Galería de partidas de Trench Crusade</h2>
+<h2>
+    Galería de Trench Crusade
+</h2>
 
 <p class="gallery-intro">
-    Algunas imágenes de nuestras batallas, campañas, miniaturas y mesas
-    de juego de <strong>Trench Crusade en Valencia</strong>.
+    Imágenes de partidas, miniaturas, escenografía y mesas de
+    juego relacionadas con <strong>Trench Crusade en Valencia</strong>.
 </p>
 
 
@@ -403,7 +537,8 @@
         <img
             src="assets/img/partida1.jpg"
             alt="Partida de Trench Crusade en Valencia"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
     </div>
 
@@ -413,7 +548,8 @@
         <img
             src="assets/img/partida2.jpg"
             alt="Batalla de Trench Crusade con miniaturas"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
     </div>
 
@@ -423,7 +559,8 @@
         <img
             src="assets/img/partida3.jpg"
             alt="Miniaturas de Trench Crusade durante una partida"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
     </div>
 
@@ -433,7 +570,8 @@
         <img
             src="assets/img/partida4.jpg"
             alt="Mesa de juego ambientada para Trench Crusade"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
     </div>
 
@@ -443,7 +581,8 @@
         <img
             src="assets/img/partida5.jpg"
             alt="Escenografía para partidas de Trench Crusade"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
     </div>
 
@@ -453,7 +592,8 @@
         <img
             src="assets/img/partida6.jpg"
             alt="Jugadores durante una partida de Trench Crusade"
-            loading="lazy">
+            loading="lazy"
+            decoding="async">
 
     </div>
 
@@ -469,8 +609,7 @@
 <footer>
 
 <p>
-    © 2026 Sons of Heroes | Club de Trench Crusade en Valencia
-
+    © 2026 Sons of Heroes | Trench Crusade y wargames en Valencia
 </p>
 
 </footer>
