@@ -965,3 +965,73 @@ footer p {
         gap: 12px;
     }
 }
+
+
+/* =========================================================
+   ENLACES - ESTILO GENERAL
+   ========================================================= */
+
+a {
+    color: #c9a85c;
+    text-decoration: none;
+    transition:
+        color 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+
+/* Enlaces ya visitados */
+a:visited {
+    color: #c9a85c;
+}
+
+
+/* Al pasar el ratón */
+a:hover {
+    color: #e0c477;
+    text-shadow: 0 0 8px rgba(224, 196, 119, 0.35);
+}
+
+
+/* Al hacer clic */
+a:active {
+    color: #f0d890;
+}
+
+
+/* =========================================================
+   ENLACES DEL CONTENIDO
+   ========================================================= */
+
+main a:not(.btn) {
+    color: #c9a85c;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(201, 168, 92, 0.45);
+}
+
+
+main a:not(.btn):visited {
+    color: #c9a85c;
+}
+
+
+main a:not(.btn):hover {
+    color: #e0c477;
+    border-bottom-color: #e0c477;
+    text-shadow: 0 0 8px rgba(224, 196, 119, 0.35);
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+a.btn,
+a.btn:visited {
+    color: #111;
+}
+
+
+a.btn:hover {
+    color: #111;
+}
