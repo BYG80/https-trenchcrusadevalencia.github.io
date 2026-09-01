@@ -18,19 +18,16 @@
     </title>
 
     <meta name="description"
-        content="Campañas narrativas de Trench Crusade en Valencia organizadas por Horta Nord Wargames. Partidas, conflictos, jornadas y campañas para jugadores de wargames.">
-
-    <meta name="keywords"
-        content="Trench Crusade Valencia, campañas Trench Crusade, Trench Crusade España, wargames Valencia, wargames Rafelbunyol, Horta Nord Wargames, campañas narrativas, partidas Trench Crusade">
+        content="Descubre las campañas de Trench Crusade en Valencia organizadas por Horta Nord Wargames. Campañas narrativas, partidas, jornadas y enfrentamientos en Rafelbunyol y l'Horta Nord.">
 
     <meta name="author"
         content="Horta Nord Wargames">
 
     <meta name="robots"
-        content="index, follow">
+        content="index, follow, max-image-preview:large">
 
-    <meta name="language"
-        content="Spanish">
+    <meta name="theme-color"
+        content="#111111">
 
 
     <!-- =========================================================
@@ -38,7 +35,7 @@
          ========================================================= -->
 
     <link rel="canonical"
-        href="https://TU-DOMINIO.com/campañas.html">
+        href="https://sons-of-heroes.es/campañas.html">
 
 
     <!-- =========================================================
@@ -48,6 +45,9 @@
     <link rel="icon"
         href="assets/img/favicon.png"
         type="image/png">
+
+    <link rel="apple-touch-icon"
+        href="assets/img/favicon.png">
 
 
     <!-- =========================================================
@@ -64,19 +64,22 @@
         content="Campañas de Trench Crusade en Valencia | Horta Nord Wargames">
 
     <meta property="og:description"
-        content="Descubre nuestras campañas narrativas de Trench Crusade en Valencia: jornadas, enfrentamientos, clasificación y evolución de la guerra.">
+        content="Campañas narrativas de Trench Crusade en Valencia. Partidas, jornadas, enfrentamientos y clasificación organizados por Horta Nord Wargames.">
 
     <meta property="og:url"
-        content="https://TU-DOMINIO.com/campañas.html">
+        content="https://sons-of-heroes.es/campañas.html">
 
     <meta property="og:site_name"
         content="Horta Nord Wargames">
 
     <meta property="og:image"
-        content="https://TU-DOMINIO.com/assets/img/logos.png">
+        content="https://sons-of-heroes.es/assets/img/logos.png">
 
     <meta property="og:image:alt"
         content="Horta Nord Wargames - Trench Crusade Valencia">
+
+    <meta property="og:image:type"
+        content="image/png">
 
 
     <!-- =========================================================
@@ -87,13 +90,16 @@
         content="summary_large_image">
 
     <meta name="twitter:title"
-        content="Campañas de Trench Crusade en Valencia">
+        content="Campañas de Trench Crusade en Valencia | Horta Nord Wargames">
 
     <meta name="twitter:description"
-        content="Campañas narrativas, partidas y conflictos de Trench Crusade organizados por Horta Nord Wargames.">
+        content="Campañas narrativas, partidas y conflictos de Trench Crusade organizados por Horta Nord Wargames en Valencia.">
 
     <meta name="twitter:image"
-        content="https://TU-DOMINIO.com/assets/img/logos.png">
+        content="https://sons-of-heroes.es/assets/img/logos.png">
+
+    <meta name="twitter:image:alt"
+        content="Horta Nord Wargames - Trench Crusade Valencia">
 
 
     <!-- =========================================================
@@ -104,7 +110,7 @@
         href="https://fonts.googleapis.com">
 
     <link rel="preconnect"
-        href="https://fonts.googleapis.com"
+        href="https://fonts.gstatic.com"
         crossorigin>
 
     <link
@@ -136,26 +142,92 @@
 
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
+        "@graph": [
 
-        "name": "Campañas de Trench Crusade en Valencia",
+            {
+                "@type": "WebPage",
 
-        "description": "Campañas narrativas de Trench Crusade organizadas por Horta Nord Wargames en Valencia.",
+                "@id": "https://sons-of-heroes.es/campañas.html#webpage",
 
-        "url": "https://TU-DOMINIO.com/campañas.html",
+                "url": "https://sons-of-heroes.es/campañas.html",
 
-        "inLanguage": "es-ES",
+                "name": "Campañas de Trench Crusade en Valencia",
 
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Horta Nord Wargames",
-            "url": "https://TU-DOMINIO.com/"
-        },
+                "description": "Campañas narrativas de Trench Crusade organizadas por Horta Nord Wargames en Valencia.",
 
-        "about": {
-            "@type": "Thing",
-            "name": "Trench Crusade"
-        }
+                "inLanguage": "es-ES",
+
+                "isPartOf": {
+                    "@id": "https://sons-of-heroes.es/#website"
+                },
+
+                "about": {
+                    "@type": "Thing",
+                    "name": "Trench Crusade"
+                },
+
+                "breadcrumb": {
+                    "@id": "https://sons-of-heroes.es/campañas.html#breadcrumb"
+                }
+            },
+
+
+            {
+                "@type": "WebSite",
+
+                "@id": "https://sons-of-heroes.es/#website",
+
+                "url": "https://sons-of-heroes.es/",
+
+                "name": "Horta Nord Wargames",
+
+                "description": "Club de Trench Crusade y wargames en Valencia y l'Horta Nord.",
+
+                "inLanguage": "es-ES"
+            },
+
+
+            {
+                "@type": "Organization",
+
+                "@id": "https://sons-of-heroes.es/#organization",
+
+                "name": "Horta Nord Wargames",
+
+                "url": "https://sons-of-heroes.es/",
+
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sons-of-heroes.es/assets/img/logos.png"
+                }
+            },
+
+
+            {
+                "@type": "BreadcrumbList",
+
+                "@id": "https://sons-of-heroes.es/campañas.html#breadcrumb",
+
+                "itemListElement": [
+
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://sons-of-heroes.es/"
+                    },
+
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Campañas",
+                        "item": "https://sons-of-heroes.es/campañas.html"
+                    }
+
+                ]
+            }
+
+        ]
     }
 
     </script>
@@ -184,7 +256,10 @@
 
             <img
                 src="assets/img/logos.png"
-                alt="Horta Nord Wargames - Trench Crusade Valencia">
+                alt="Horta Nord Wargames - Trench Crusade Valencia"
+                width="180"
+                height="auto"
+                loading="eager">
 
         </a>
 
@@ -194,7 +269,6 @@
         </span>
 
     </div>
-
 
 
     <!-- =====================================================
@@ -231,15 +305,6 @@
                     Eventos
                 </a>
             </li>
-
-
-            <!--
-            <li>
-                <a href="#">
-                    Liga
-                </a>
-            </li>
-            -->
 
 
             <li>
@@ -299,7 +364,7 @@
         <div class="campañas-hero-content">
 
             <span class="etiqueta">
-                TRENCH CRUSADE VALENCIA
+                TRENCH CRUSADE · VALENCIA · HORTA NORD
             </span>
 
 
@@ -350,11 +415,19 @@
 
 
             <p>
-                En Horta Nord Wargames queremos organizar
-                campañas narrativas para jugadores de Trench
-                Crusade en Valencia y la comarca de l'Horta Nord,
-                creando conflictos en los que cada batalla tenga
-                consecuencias.
+                En Horta Nord Wargames organizamos actividades
+                de Trench Crusade para jugadores de Valencia y
+                la comarca de l'Horta Nord, con especial atención
+                a Rafelbunyol y su entorno.
+            </p>
+
+
+            <p>
+                Nuestro objetivo es crear campañas narrativas
+                en las que cada batalla tenga consecuencias y
+                donde los jugadores puedan participar en una
+                historia compartida dentro del universo de
+                Trench Crusade.
             </p>
 
         </div>
@@ -379,14 +452,14 @@
 
 
             <h2 id="titulo-campañas">
-                Nuestras campañas
+                Campañas de Trench Crusade
             </h2>
 
 
             <p>
-                Consulta las campañas de Trench Crusade,
-                sus ejércitos participantes, jornadas,
-                enfrentamientos y clasificación.
+                Consulta nuestras campañas de Trench Crusade
+                en Valencia, sus ejércitos participantes,
+                jornadas, enfrentamientos y clasificación.
             </p>
 
         </div>
@@ -440,14 +513,15 @@
 
 
                 <h2 id="titulo-cta">
-                    Únete a nuestras campañas
+                    Únete a nuestras campañas de Trench Crusade
                 </h2>
 
 
                 <p>
-                    Si quieres participar en futuras campañas
-                    de Trench Crusade, ponte en contacto con
-                    nosotros y forma parte de Horta Nord Wargames.
+                    Si quieres participar en futuras campañas,
+                    partidas y eventos de Trench Crusade en
+                    Valencia y l'Horta Nord, ponte en contacto
+                    con Horta Nord Wargames.
                 </p>
 
             </div>
@@ -455,7 +529,8 @@
 
             <a
                 href="club.html"
-                class="btn">
+                class="btn"
+                aria-label="Conocer el club Horta Nord Wargames">
 
                 QUIERO PARTICIPAR
 
@@ -476,11 +551,10 @@
 
 <footer>
 
-
-<p>
-    © 2026 Sons of Heroes | Club de Trench Crusade en Valencia
-
-</p>
+    <p>
+        © 2026 Horta Nord Wargames |
+        Club de Trench Crusade en Valencia
+    </p>
 
 </footer>
 
@@ -495,9 +569,7 @@
 
 /*
 ================================================================
-================================================================
                     DATOS DE LAS CAMPAÑAS
-================================================================
 ================================================================
 */
 
@@ -540,7 +612,7 @@ const campañas = [
 
 
         descripcion:
-            "Campaña narrativa de Trench Crusade en la que las decisiones de los jugadores determinarán el desarrollo de la guerra.",
+            "Campaña narrativa de Trench Crusade en Valencia en la que las decisiones de los jugadores determinarán el desarrollo de la guerra.",
 
 
         ejercitos: [
@@ -667,7 +739,6 @@ const campañas = [
     },
 
 
-
     /* =========================================================
                          CAMPAÑA 2
        ========================================================= */
@@ -703,7 +774,7 @@ const campañas = [
 
 
         descripcion:
-            "Una campaña centrada en los combates por el control de una red de trincheras estratégicas. Cada victoria acercará a una facción al dominio del frente.",
+            "Campaña narrativa de Trench Crusade centrada en los combates por el control de una red de trincheras estratégicas.",
 
 
         ejercitos: [
@@ -802,7 +873,6 @@ const campañas = [
     },
 
 
-
     /* =========================================================
                          CAMPAÑA 3
        ========================================================= */
@@ -838,7 +908,7 @@ const campañas = [
 
 
         descripcion:
-            "Una campaña narrativa en la que varias fuerzas lucharán por mantener o conquistar el último bastión antes de que el frente colapse.",
+            "Campaña narrativa de Trench Crusade en la que varias fuerzas lucharán por mantener o conquistar el último bastión antes de que el frente colapse.",
 
 
         ejercitos: [
@@ -967,8 +1037,11 @@ function mostrarCampañas() {
 
             <div class="sin-campañas">
 
-                <div class="sin-campañas-icono">
+                <div class="sin-campañas-icono"
+                    aria-hidden="true">
+
                     ⚔️
+
                 </div>
 
                 <h3>
@@ -978,7 +1051,7 @@ function mostrarCampañas() {
                 <p>
                     Actualmente estamos preparando
                     nuestras primeras campañas narrativas
-                    de Trench Crusade.
+                    de Trench Crusade en Valencia.
                 </p>
 
             </div>
@@ -1004,7 +1077,6 @@ function mostrarCampañas() {
 
 
             tarjeta.innerHTML = `
-
 
                 <div class="campaña-cabecera">
 
@@ -1043,9 +1115,19 @@ function mostrarCampañas() {
 
                         <span>
 
-                            ${campaña.inicio}
+                            <time datetime="${convertirFecha(campaña.inicio)}">
+
+                                ${campaña.inicio}
+
+                            </time>
+
                             —
-                            ${campaña.fin}
+
+                            <time datetime="${convertirFecha(campaña.fin)}">
+
+                                ${campaña.fin}
+
+                            </time>
 
                         </span>
 
@@ -1136,7 +1218,7 @@ function mostrarCampañas() {
                     type="button"
                     class="btn boton-campaña"
                     onclick="mostrarDetalle(${indice})"
-                    aria-label="Ver detalles de ${campaña.nombre}">
+                    aria-label="Ver detalles de la campaña ${campaña.nombre}">
 
                     VER CAMPAÑA
 
@@ -1152,6 +1234,32 @@ function mostrarCampañas() {
 
         }
     );
+
+}
+
+
+
+/*
+================================================================
+                    CONVERTIR FECHA
+================================================================
+*/
+
+
+function convertirFecha(fecha) {
+
+    const partes =
+        fecha.split("/");
+
+
+    if (partes.length !== 3) {
+
+        return "";
+
+    }
+
+
+    return `${partes[2]}-${partes[1]}-${partes[0]}`;
 
 }
 
@@ -1228,7 +1336,13 @@ function mostrarDetalle(indice) {
                     </strong>
 
                     <span>
-                        ${campaña.inicio}
+
+                        <time datetime="${convertirFecha(campaña.inicio)}">
+
+                            ${campaña.inicio}
+
+                        </time>
+
                     </span>
 
                 </div>
@@ -1241,7 +1355,13 @@ function mostrarDetalle(indice) {
                     </strong>
 
                     <span>
-                        ${campaña.fin}
+
+                        <time datetime="${convertirFecha(campaña.fin)}">
+
+                            ${campaña.fin}
+
+                        </time>
+
                     </span>
 
                 </div>
@@ -1312,24 +1432,29 @@ function mostrarDetalle(indice) {
                 </h3>
 
 
-                <div class="tabla-clasificacion">
+                <div
+                    class="tabla-clasificacion"
+                    role="table"
+                    aria-label="Clasificación de ${campaña.nombre}">
 
 
-                    <div class="fila tabla-cabecera">
+                    <div
+                        class="fila tabla-cabecera"
+                        role="row">
 
-                        <span>
+                        <span role="columnheader">
                             Ejército
                         </span>
 
-                        <span>
+                        <span role="columnheader">
                             V
                         </span>
 
-                        <span>
+                        <span role="columnheader">
                             D
                         </span>
 
-                        <span>
+                        <span role="columnheader">
                             Puntos
                         </span>
 
@@ -1341,27 +1466,29 @@ function mostrarDetalle(indice) {
 
                         equipo => `
 
-                            <div class="fila">
+                            <div
+                                class="fila"
+                                role="row">
 
-                                <span>
+                                <span role="cell">
 
                                     ${equipo.ejercito}
 
                                 </span>
 
-                                <span>
+                                <span role="cell">
 
                                     ${equipo.victorias}
 
                                 </span>
 
-                                <span>
+                                <span role="cell">
 
                                     ${equipo.derrotas}
 
                                 </span>
 
-                                <span>
+                                <span role="cell">
 
                                     ${equipo.puntos}
 
@@ -1397,7 +1524,9 @@ function mostrarDetalle(indice) {
                             <div class="jornada">
 
 
-                                <div class="jornada-numero">
+                                <div
+                                    class="jornada-numero"
+                                    aria-hidden="true">
 
                                     ${jornada.numero}
 
@@ -1416,7 +1545,11 @@ function mostrarDetalle(indice) {
 
                                     <span>
 
-                                        ${jornada.fecha}
+                                        <time datetime="${convertirFecha(jornada.fecha)}">
+
+                                            ${jornada.fecha}
+
+                                        </time>
 
                                     </span>
 
@@ -1501,5 +1634,4 @@ mostrarCampañas();
 </body>
 
 </html>
-
 
